@@ -1,0 +1,28 @@
+body {
+  background-color: #22313F;
+}
+
+.skill-skill {
+  min-width: 1px;
+  max-width: 100%;
+  width: 0;
+}
+
+.skillbar {
+  width: auto;
+  float: left;
+  margin-right: 1em;
+  color: white;
+}
+
+.skillbar h1 {
+  font-size: 20px;
+  text-align: left;
+  color: #34495e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+.skillbar p {
+  text-align: left;
+}

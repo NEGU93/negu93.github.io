@@ -1,0 +1,68 @@
+<html>
+<body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <header>
+    <form>
+      <div data-aos="fade-up">
+        <h1>TESTING FADING!</h1>
+      </div>
+      <div class="multiselect">
+        <div class="selectBox" (click)="showCheckboxes()">
+          <select>
+            <option>Filter Timeline</option>
+          </select>
+          <div class="overSelect"></div>
+        </div>
+        <div id="checkboxes">
+          <label for="select-all">
+            <input type="checkbox" id="select-all" [(ngModel)]="selectAll" [ngModelOptions]="{standalone: true}"/><span id="selectallspan">Deselect All</span></label>
+          <label for="education">
+            <input type="checkbox" id="education" [(ngModel)]="education" [ngModelOptions]="{standalone: true}"/>Education</label>
+          <label for="experience">
+            <input type="checkbox" id="experience" [(ngModel)]="experience" [ngModelOptions]="{standalone: true}"/>Work Experience</label>
+          <label for="teaching">
+            <input type="checkbox" id="teaching" [(ngModel)]="teaching" [ngModelOptions]="{standalone: true}"/>Teachings</label>
+          <!--<label for="publication">
+            <input type="checkbox" id="publication" [(ngModel)]="publication" [ngModelOptions]="{standalone: true}"/>Publications</label>-->
+          <label for="course">
+            <input type="checkbox" id="course" [(ngModel)]="course" [ngModelOptions]="{standalone: true}"/>Courses</label>
+          <label for="competition">
+            <input type="checkbox" id="competition" [(ngModel)]="competition" [ngModelOptions]="{standalone: true}"/>Competitions</label>
+          <label for="misc">
+            <input type="checkbox" id="misc" [(ngModel)]="misc" [ngModelOptions]="{standalone: true}"/>Miscellaneous</label>
+        </div>
+      </div>
+    </form>
+  </header>
+  <section id="cd-timeline" class="cd-container">
+    <div class="cd-timeline-block" *ngFor='let event of filteredEvents'>
+      <div class="cd-timeline-img cd-movie">
+        <i class="{{event.eventName | logopipe}}"></i>
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <div data-aos="fade-up">
+          <h2>{{event.role}}</h2>
+          <h3>{{event.enterprise}}</h3>
+          <div class="editor">
+            <p>{{event.description}}</p>
+          </div>
+          <div class="wrap"> 
+            <span class="cd-date">
+              <i class="far fa-calendar-alt"></i>
+              <ng-container *ngIf="event.startDate | date:'MM/yyyy' as start">
+                {{start}} -
+              </ng-container>
+              {{event.endDate | date:"MM/yyyy" }}
+            </span>
+            <img class="enterprise-logo" src={{event.logoUrl}} alt="enterprise-logo">
+          </div>
+        </div>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+  </section> <!-- cd-timeline -->
+  <div data-aos="fade-up">
+    <h1>TESTING FADING!</h1>
+  </div>
+</body>
+</html>

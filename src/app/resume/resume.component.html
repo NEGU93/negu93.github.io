@@ -1,0 +1,43 @@
+<div class="container">
+    <h1>Resumé</h1>
+    <div class="button" id="download-cv">
+        <a href="assets/pdf/cv/english.pdf">
+            <span>Download Resume</span>
+            <div id="down-arrow">
+                <i class="fas fa-cloud-download-alt fa-lg"></i>
+            </div>
+        </a>
+    </div>
+    <div class="resume-buttons">
+        <div class="full-link">
+            <h2>Work Experience</h2>
+            <button id="experience" [routerLink]="['/timeline', 'experience']">
+                <i class="fas fa-briefcase fa-lg"></i>
+            </button>
+        </div>
+        <div class="full-link">
+            <h2>Education</h2>
+            <button id="education" [routerLink]="['/timeline', 'education']">
+                <i class="fas fa-user-graduate fa-lg"></i>
+            </button>
+        </div>
+        <div class="full-link">
+            <h2>Competitions</h2>
+            <button id="competitions" [routerLink]="['/timeline', 'competition']">
+                <i class="fas fa-trophy fa-lg"></i>
+            </button>
+        </div>
+        <div class="full-link">
+            <h2>Teachings</h2>
+            <button id="teaching" [routerLink]="['/timeline', 'teaching']">
+                <i class="fas fa-chalkboard-teacher fa-lg"></i>
+            </button>
+        </div>
+        <div class="full-link">
+            <h2>Courses</h2>
+            <button id="courses" [routerLink]="['/timeline', 'courses']">
+                <i class="fas fa-certificate fa-lg"></i>
+            </button>
+        </div>
+    </div>
+</div>

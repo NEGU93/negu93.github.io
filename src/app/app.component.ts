@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-website';
+  ngOnInit(): void {
+    $('.menu-toggler').on("click", function () {
+      $(this).toggleClass("open");
+      $('.top-nav').toggleClass('open');
+    });
+  }
+
+  closeNav(): void {
+    $('.menu-toggler').toggleClass("open");
+    $('.top-nav').toggleClass('open');
+  }
+
+  scrollToTop() : void {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  }
 }

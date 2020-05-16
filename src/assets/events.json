@@ -1,0 +1,225 @@
+[
+    {
+        "eventName": "education",
+        "startDate": "2012-01",
+        "endDate": "2018-12",
+        "description": "Percentile: Top 2 over 26 students",
+        "enterprise": "Instituto Tecnológico de Buenos Aires (ITBA)",
+        "role": "Electronic Engineer with focus in Signal Processing",
+        "logoUrl": "assets/images/logos/enterprises/itba.png",
+        "location": "Buenos Aires, Argentina" 
+    },
+    {
+        "eventName": "education",
+        "startDate": "2016-12",
+        "endDate": "2017-01",
+        "description": "",
+        "enterprise": "Ecole Polytechnique",
+        "role": "International Exchange Program (PEI)",
+        "logoUrl": "assets/images/logos/enterprises/ecole-polytechnique.png",
+        "location": "Palaiseau, France" 
+    },
+    {
+        "eventName": "education",
+        "startDate": "2007-03",
+        "endDate": "2011-12",
+        "description": "Academic Performance 17.7 / 20. Standard-Bearer.",
+        "enterprise": "St. Patrick's College",
+        "role": "High School",
+        "logoUrl": "assets/images/logos/enterprises/san-patricio.png",
+        "location": "San Carlos de Bariloche, Argentina" 
+    },
+    {
+        "eventName": "experience",
+        "startDate": "2019-10",
+        "endDate": "Present",
+        "description": "PhD student. Scholarship 50%-50% ONERA and DGA (Direction Générale de l'Armement). Based in ONERA / SONDRA - CentraleSupelec.",
+        "department": "MATS / SONDRA",
+        "enterprise": "ONERA / CentraleSupelec / DGA",
+        "role": "PhD on Complex-Valued Neural Networks for radar applications",
+        "logoUrl": "assets/images/logos/enterprises/onera.png",
+        "location": "Palaiseau, France" 
+    },
+    {
+        "eventName": "experience",
+        "startDate": "2019-06",
+        "endDate": "2019-09",
+        "description": "Fixed Term Contract (CDD) for a few months before starting the PhD",
+        "department": "SONDRA",
+        "enterprise": "CentraleSupelec",
+        "role": "Engineer",
+        "logoUrl": "assets/images/logos/enterprises/CentraleSupelec/cs-no-back-black-letters.png",
+        "location": "Gif-Sur-Yvette, France" 
+    },
+    {
+        "eventName": "experience",
+        "startDate": "2019-03",
+        "endDate": "2018-09",
+        "description": "Fast Electronics & data acquisition for Mimac-FastN. Optimization of communication speed with a Xilinx FPGA via USB 3.0 techonology using Cypress FX3 Board",
+        "enterprise": "Centre National de la Recherche Scientifique",
+        "role": "Intern",
+        "logoUrl": "assets/images/logos/enterprises/cnrs.png",
+        "location": "Grenoble, France" 
+    },
+    {
+        "eventName": "experience",
+        "startDate": "2018-04",
+        "endDate": "2017-11",
+        "description": "Service Provider for AMX (Claro). CCNA Service Provider",
+        "enterprise": "Cisco Systems",
+        "role": "Software System Engineer Intern",
+        "logoUrl": "assets/images/logos/enterprises/cisco.png",
+        "location": "Buenos Aires, Argentina" 
+    },
+    {
+        "eventName": "experience",
+        "startDate": "2015-03",
+        "endDate": "2015-06",
+        "description": "Design and Implementation of a FPGA Cyclone IV Board",
+        "department": "Electronics Digital Group (GEDA)",
+        "enterprise": "Instituto Tecnológico de Buenos Aires (ITBA)",
+        "role": "Student Helper",
+        "logoUrl": "assets/images/logos/enterprises/itba.png",
+        "location": "Buenos Aires, Argentina" 
+    },
+    {
+        "eventName": "experience",
+        "startDate": "2015-01",
+        "endDate": "2015-02",
+        "description": "Comparative Evaluation between CAD tools for Electronic Design. Comparative evaluation between Altium Designer and OrCAD Cadence.",
+        "department": "Electronics Department",
+        "enterprise": "Investigación Aplicada (INVAP)",
+        "role": "Intern",
+        "logoUrl": "assets/images/logos/enterprises/INVAP.png",
+        "location": "San Carlos de Bariloche, Argentina" 
+    },
+    {
+        "eventName": "experience",
+        "startDate": "2014-01",
+        "endDate": "2014-02",
+        "description": "Software simulation of energetic consumption on buildings in terms of its morphology using Energy Plus",
+        "department": "Laboratory of Navier",
+        "enterprise": "Ecole des Ponts",
+        "role": "Intern",
+        "logoUrl": "assets/images/logos/enterprises/ponts.png",
+        "location": "Paris, France" 
+    },
+    {
+        "eventName": "teaching",
+        "startDate": "2017-08",
+        "endDate": "2017-12",
+        "description": "Teaching assistant in the course Neural Networks where several lectures where given, corrected exams and works and helped with the organization of the course itself",
+        "enterprise": "Instituto Tecnoloógico de Buenos Aires",
+        "role": "Teaching Assistant",
+        "logoUrl": "assets/images/logos/enterprises/itba.png",
+        "location": "Buenos Aires, Argentina" 
+    },
+    {
+        "eventName": "teaching",
+        "startDate": "2019-10",
+        "endDate": "2019-12",
+        "description": "Tenured Professor / Chair Holder in the course Digital Signal Processing (DSP) at École Poytechnique de l'université Paris Sud. I was in charge of all the course, organization, theoretical and practical lectures, exams and grading",
+        "enterprise": "École Polytechnique de l'université Paris Sud",
+        "role": "Tenured Professor",
+        "logoUrl": "assets/images/logos/enterprises/polytech.png",
+        "location": "Orsay, France" 
+    },
+    {
+        "eventName": "teaching",
+        "startDate": "2019-09",
+        "endDate": "2019-10",
+        "description": "Assossiate Professor at the course Informatique et Algorithmique, a course about Python. I was in charge in the TP and helped with taking the exam",
+        "enterprise": "IUT Orsay",
+        "role": "Associate Professor",
+        "logoUrl": "assets/images/logos/enterprises/IUT-D-ORSAY-web2.png",
+        "location": "Orsay, France" 
+    },
+    {
+        "eventName": "course",
+        "endDate": "2019-09-24",
+        "description": "Online Course offered by Andrew Ng. The detailed information of the course can be found in https://www.coursera.org/learn/machine-learning",
+        "enterprise": "Coursera / Stanford University",
+        "role": "Machine Learning",
+        "logoUrl": "assets/images/logos/enterprises/s.png",
+        "location": "online Coursera",
+        "certificate": "https://coursera.org/share/0f8d193d372dd33be7b3d39e23317594"
+    },
+    {
+        "eventName": "course",
+        "endDate": "2018-03-23",
+        "startDate": "2018-03-19",
+        "description": "One week training workshop at Silicon Valley at Cisco's headquarters about the NFVI (Network Function Virtualization Infrastructure) technology",
+        "enterprise": "Cisco Systems",
+        "role": "NFVI Bootcamp",
+        "logoUrl": "assets/images/logos/enterprises/cisco.png",
+        "location": "San Jose, California, United States"
+    },
+    {
+        "eventName": "course",
+        "endDate": "2011-11",
+        "description": "Workshop in Mathematics 'A bridge between High School and University' a mathematic course designed to review the knowledge needed to enter university",
+        "enterprise": "Universidad Nacional del Comahue",
+        "role": "Workshop in Mathematics",
+        "logoUrl": "assets/images/logos/enterprises/unco.png",
+        "location": "San Carlos de Barilcohe, Argentina"
+    },
+    {
+        "eventName": "competition",
+        "startDate": "2017-11-03",
+        "endDate": "2017-11-04",
+        "description": "24-hour Hackaton. Awarded 3rd prize over 20 participants",
+        "enterprise": "J.P. Morgan Chase & Co.",
+        "role": "Hackathon J.P. Morgan",
+        "logoUrl": "assets/images/logos/enterprises/JP-Morgan-Logo.png",
+        "location": "Buenos Aires, Argentina"
+    },
+    {
+        "eventName": "competition",
+        "endDate": "2017-08",
+        "description": "Awarded by several companies (such as Schneider Electric) as the best project of the exhibition",
+        "enterprise": "Instituto Tecnológico de Buenos Aires (ITBA)",
+        "role": "ITBA's electronic exhibition",
+        "logoUrl": "assets/images/logos/enterprises/itba.png",
+        "location": "Buenos Aires, Argentina"
+    },
+    {
+        "eventName": "competition",
+        "endDate": "2017-10-14",
+        "startDate": "2018-10-18",
+        "description": "2017 : IEEEXtreme 11.0 Position : 391 over 3350 (percentile 88) 2015 : IEEEXtreme 9.0 Position : 275 over 2035 (percentile 86) 2014 : IEEEXtreme 8.0 Position : 536 over 1853 (percentile 71)",
+        "enterprise": "Instituto Tecnológico de Buenos Aires (ITBA)",
+        "role": "IEEEXtreme 24-hour Programming Competition",
+        "logoUrl": "assets/images/logos/enterprises/IEEEXtreme.png",
+        "location": "Buenos Aires, Argentina",
+        "certificate": "assets/pdf/ieeextreme.pdf"
+    },
+    {
+        "eventName": "competition",
+        "endDate": "2017-05",
+        "description": "IEEE-ITBA Programming competition. Position: 2 over 15 (percentile 87). Short competition of only 3 hours.",
+        "enterprise": "Instituto Tecnológico de Buenos Aires (ITBA)",
+        "role": "We are short of time",
+        "logoUrl": "assets/images/logos/enterprises/IEEEITBA.png",
+        "location": "Buenos Aires, Argentina"
+    },
+    {
+        "eventName": "competition",
+        "endDate": "2007-12",
+        "startDate": "2004-01",
+        "description": "Participant many years in a row without failing a test",
+        "enterprise": "Olimpíada Matemática Ñandú",
+        "role": "National Mathematical Olympiad",
+        "logoUrl": "assets/images/logos/enterprises/oma.png",
+        "location": "San Carlos de Bariloche, Argentina"
+    },
+    {
+        "eventName": "misc",
+        "endDate": "2018-12",
+        "startDate": "2015-01",
+        "description": "Member number: 93157321",
+        "enterprise": "IEEE",
+        "role": "IEEE Membership",
+        "logoUrl": "assets/images/logos/enterprises/ieee.png",
+        "location": "Region 9 (Latin America)"
+    }
+]

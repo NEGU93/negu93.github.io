@@ -1,0 +1,27 @@
+
+<h1>Languages</h1>
+<div class="language-category">
+    <button id="human" [ngClass]="{'active': currentCategory === 'human'}" (click)='setCategory("human")'>
+        Human
+    </button>
+    <button id="computer" [ngClass]="{'active': currentCategory === 'computer'}" (click)='setCategory("computer")'>
+        Computer
+    </button>
+    <button id="web" [ngClass]="{'active': currentCategory === 'web'}" (click)='setCategory("web")'>
+        Web Development
+    </button>
+</div>
+
+<div *ngIf="currentCategory === 'human'" class="category-human">
+    <app-human></app-human>
+</div>
+<div *ngIf="currentCategory === 'computer'" class="category-computer">
+    <app-computer></app-computer>
+</div>
+<div *ngIf="currentCategory === 'web'" class="category-app">
+    <app-web></app-web>
+</div>
+
+
+
+
