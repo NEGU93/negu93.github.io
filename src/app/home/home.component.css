@@ -32,7 +32,11 @@
     flex-wrap: wrap;
 }
 
-#languages, #resume {
+#about {
+    background-color: #5A6B7D;
+}
+
+#languages, #resume, #about {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
