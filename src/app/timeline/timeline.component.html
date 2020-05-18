@@ -33,15 +33,23 @@
   </header>
   <section id="cd-timeline" class="cd-container">
     <div class="cd-timeline-block" *ngFor='let event of filteredEvents'>
-      <div class="cd-timeline-img cd-movie">
+      <div class="cd-timeline-img {{event.eventName}}">
         <i class="{{event.eventName | logopipe}}"></i>
       </div> <!-- cd-timeline-img -->
 
       <div class="cd-timeline-content">
           <h2>{{event.role}}</h2>
+          <h3 *ngIf="event.department as dept"> {{dept}} </h3>
           <h3>{{event.enterprise}}</h3>
           <div class="editor">
             <p>{{event.description}}</p>
+            <div class="tags" *ngIf="event.tags as tags">
+              <i class="fas fa-tags" style="color: white;"></i>
+              <button *ngFor='let tag of tags'>{{tag}}</button>
+            </div>
+            <div *ngIf="event.certificate as cert">
+              <a href={{cert}}><i class="fas fa-link" style="color: #ffffff;" ></i></a>
+            </div>
           </div>
           <div class="wrap"> 
             <span class="cd-date">

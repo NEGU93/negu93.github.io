@@ -38,7 +38,8 @@
         "enterprise": "ONERA / CentraleSupelec / DGA",
         "role": "PhD on Complex-Valued Neural Networks for radar applications",
         "logoUrl": "assets/images/logos/enterprises/onera.png",
-        "location": "Palaiseau, France" 
+        "location": "Palaiseau, France",
+        "tags": ["Machine Learning", "Python"]
     },
     {
         "eventName": "experience",
@@ -49,17 +50,20 @@
         "enterprise": "CentraleSupelec",
         "role": "Engineer",
         "logoUrl": "assets/images/logos/enterprises/CentraleSupelec/cs-no-back-black-letters.png",
-        "location": "Gif-Sur-Yvette, France" 
+        "location": "Gif-Sur-Yvette, France",
+        "tags": ["Machine Learning", "Python"] 
     },
     {
         "eventName": "experience",
         "startDate": "2019-03",
         "endDate": "2018-09",
+        "department": "LPSC - IN2P3",
         "description": "Fast Electronics & data acquisition for Mimac-FastN. Optimization of communication speed with a Xilinx FPGA via USB 3.0 techonology using Cypress FX3 Board",
         "enterprise": "Centre National de la Recherche Scientifique",
         "role": "Intern",
         "logoUrl": "assets/images/logos/enterprises/cnrs.png",
-        "location": "Grenoble, France" 
+        "location": "Grenoble, France",
+        "tags": ["vhdl", "c++", "FPGA", "SQL"]
     },
     {
         "eventName": "experience",
@@ -69,7 +73,8 @@
         "enterprise": "Cisco Systems",
         "role": "Software System Engineer Intern",
         "logoUrl": "assets/images/logos/enterprises/cisco.png",
-        "location": "Buenos Aires, Argentina" 
+        "location": "Buenos Aires, Argentina",
+        "tags": ["CCNA", "NFVI"]
     },
     {
         "eventName": "experience",
@@ -80,7 +85,8 @@
         "enterprise": "Instituto Tecnológico de Buenos Aires (ITBA)",
         "role": "Student Helper",
         "logoUrl": "assets/images/logos/enterprises/itba.png",
-        "location": "Buenos Aires, Argentina" 
+        "location": "Buenos Aires, Argentina",
+        "tags": ["Altium Designer", "FPGA"]
     },
     {
         "eventName": "experience",
@@ -91,7 +97,8 @@
         "enterprise": "Investigación Aplicada (INVAP)",
         "role": "Intern",
         "logoUrl": "assets/images/logos/enterprises/INVAP.png",
-        "location": "San Carlos de Bariloche, Argentina" 
+        "location": "San Carlos de Bariloche, Argentina" ,
+        "tags": ["Altium Designer", "OrCAD"]
     },
     {
         "eventName": "experience",
@@ -102,7 +109,8 @@
         "enterprise": "Ecole des Ponts",
         "role": "Intern",
         "logoUrl": "assets/images/logos/enterprises/ponts.png",
-        "location": "Paris, France" 
+        "location": "Paris, France" ,
+        "tags": ["Energy Plus"]
     },
     {
         "eventName": "teaching",
@@ -112,7 +120,8 @@
         "enterprise": "Instituto Tecnoloógico de Buenos Aires",
         "role": "Teaching Assistant",
         "logoUrl": "assets/images/logos/enterprises/itba.png",
-        "location": "Buenos Aires, Argentina" 
+        "location": "Buenos Aires, Argentina",
+        "tags": ["Machine Learning", "Python"] 
     },
     {
         "eventName": "teaching",
@@ -122,7 +131,8 @@
         "enterprise": "École Polytechnique de l'université Paris Sud",
         "role": "Tenured Professor",
         "logoUrl": "assets/images/logos/enterprises/polytech.png",
-        "location": "Orsay, France" 
+        "location": "Orsay, France",
+        "tags": ["Assembler"]
     },
     {
         "eventName": "teaching",
@@ -132,7 +142,8 @@
         "enterprise": "IUT Orsay",
         "role": "Associate Professor",
         "logoUrl": "assets/images/logos/enterprises/IUT-D-ORSAY-web2.png",
-        "location": "Orsay, France" 
+        "location": "Orsay, France",
+        "tags": ["Python"]
     },
     {
         "eventName": "course",
@@ -142,7 +153,8 @@
         "role": "Machine Learning",
         "logoUrl": "assets/images/logos/enterprises/s.png",
         "location": "online Coursera",
-        "certificate": "https://coursera.org/share/0f8d193d372dd33be7b3d39e23317594"
+        "certificate": "https://coursera.org/share/0f8d193d372dd33be7b3d39e23317594",
+        "tags": ["Machine Learning", "Matlab"]
     },
     {
         "eventName": "course",
@@ -152,7 +164,8 @@
         "enterprise": "Cisco Systems",
         "role": "NFVI Bootcamp",
         "logoUrl": "assets/images/logos/enterprises/cisco.png",
-        "location": "San Jose, California, United States"
+        "location": "San Jose, California, United States",
+        "tags": ["NFVI"]
     },
     {
         "eventName": "course",

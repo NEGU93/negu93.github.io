@@ -117,12 +117,12 @@ height: 260px;
 }
 
 .code-display::before {
-content: "Expertise";
-position: absolute;
-top: -70px;
-left: 0;
-font-size: 3.0rem;
-color: #333;
+  /*content: "Expertise";*/
+  position: absolute;
+  top: -70px;
+  left: 0;
+  font-size: 3.0rem;
+  color: #333;
 }
 
 .code-display h1 {

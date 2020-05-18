@@ -8,11 +8,11 @@ $(document).ready(function () {
 
 	var hoverdetect = setInterval(function(){ hovernotify() }, 3000);
 	function hovernotify() {
-    	$(".hover-notify").velocity("callout.tada");
+		$(".hover-notify").velocity("callout.tada");
 	}
 	function myStopFunction() {
 		$(".hover-notify").velocity('stop', true).velocity("fadeOut");
-    	clearInterval(hoverdetect);
+		clearInterval(hoverdetect);
 	}
 
 	$(".hex-init").mouseenter(function () {	

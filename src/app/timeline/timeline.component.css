@@ -114,7 +114,7 @@ body {
   font-size: 100%;
   font-family: "Droid Serif", serif!important;
   color: #7f8c97;
-    background: #f2f2f2!important;
+  background: #f2f2f2!important;
 }
 
 a {
@@ -202,7 +202,7 @@ header h1 {
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #d7e4ed;
+  background: #34495e;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -250,7 +250,7 @@ header h1 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #34495e, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img i {
   display: block;
@@ -263,53 +263,29 @@ header h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
-  background: #75ce66;
+.cd-timeline-img.experience {
+  background: #2E4057;
 }
-.cd-timeline-img.cd-remark {
-  background: #4081AC;
+.cd-timeline-img.education {
+  background: #9C3848;
 }
-.cd-timeline-img.cd-movie {
-  background: #c03b44;
+.cd-timeline-img.teaching {
+  background: #7FC6A4;
 }
-.cd-timeline-img.cd-location {
-  background: #f0ca45;
-}
-
-.cd-timeline-img.cd-skills {
-  background: #767B91;
+.cd-timeline-img.publication {
+  background: #6CA6C1;
 }
 
-.cd-timeline-img.cd-references {
-  background: #EF476F;
+.cd-timeline-img.course {
+  background: #FFAD69;
 }
 
-.cd-timeline-img.cd-cover-letter {
-  background: #49516F;
+.cd-timeline-img.competition {
+  background: #F5E663;
 }
 
-.cd-timeline-img.cd-other {
-  background: #523F38;
-}
-
-.cd-timeline-img.cd-certificates {
-  background: #496F5D;
-}
-
-.cd-timeline-img.cd-courses {
-  background: #02394A;
-}
-
-.cd-timeline-img.cd-contact {
-  background: #FF715B;
-}
-
-.cd-timeline-img.cd-achievements {
-  background: #4C5454;
-}
-
-.cd-timeline-img.cd-volunteer {
-  background: #55D6BE;
+.cd-timeline-img.misc {
+  background: #D6F8D6;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -405,13 +381,13 @@ header h1 {
 }
 .cd-timeline-content h2 {
   color: #ffffff;
-  font-size: 2.25rem;
+  /*font-size: 1.75rem;*/
   font-weight: 200;
   font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 .cd-timeline-content h3{
   color: #ffffff;
-  font-size: 1.75rem;
+  /*font-size: 1.75rem;*/
   font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 .cd-timeline-content .enterprise-logo {
@@ -458,13 +434,12 @@ header h1 {
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 2.25rem;
+    /*font-size: 20px;*/
+    font-size: 1.75rem;
     font-weight: 200;
   }
   .cd-timeline-content h3 {
-    
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
     font-weight: 200;
   }
@@ -484,8 +459,7 @@ header h1 {
     width: 45%;
   }
   .cd-timeline-content h2 {
-    font-size: 20px;
-    
+    /*font-size: 20px;*/
     font-weight: 200;
   }
   .cd-timeline-content::before {
@@ -502,7 +476,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-width: 200px;
+    min-width: 230px;
     left: 122%;
     top: 6px;
     font-size: 16px;
@@ -814,15 +788,37 @@ a{
 
 #checkboxes {
   display: none;
-  border: 1px #dadada solid;
+  border: 1px #b1b1b1 solid;
 }
 
 #checkboxes label {
   display: block;
+  color: black;
 }
 
 #checkboxes label:hover {
-  background-color: #1e90ff;
+  background-color: #b1b1b1;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.tags button {
+  margin-left: 1rem;
+  text-transform: capitalize;
+  border: 1.5px solid #ffffff;
+  padding: 1.5px 3px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: #5A6B7D;
+  outline: none;
+  cursor: pointer;
 }
 
 

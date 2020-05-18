@@ -9,4 +9,5 @@ export interface IEvent {
     role: string;
     location: string;
     certificate?: string;
+    tags?: string;
 }
