@@ -19,6 +19,20 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       })),
       transition('void <=> *', animate(1000)),
     ]),
+    trigger('EnterFromRight', [
+      state('flyIn', style({ transform: 'translateX(0)' })),
+      transition(':enter', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('0.5s 500ms ease-in')
+      ]),
+    ]),
+    trigger('EnterFromLeft', [
+      state('flyIn', style({ transform: 'translateX(0)' })),
+      transition(':enter', [
+        style({ transform: 'translateX(100%)' }),
+        animate('0.5s 500ms ease-in')
+      ]),
+    ])
   ]
 })
 export class TimelineComponent implements OnInit  {
@@ -194,9 +208,11 @@ export class TimelineComponent implements OnInit  {
       }, 
       error: err => this.errorMessage = err
     });   
-    for (var i = 0;i<this.hasAppeared.length;i++) {
+    for (var i = 1; i<this.hasAppeared.length;i++) {
       this.hasAppeared[i] = false;
     }
+    this.hasAppeared[0] = true;
+    //this.hasAppeared[1] = true;
   }
 
   parseData(data : IEvent[]) : IEvent[] {
