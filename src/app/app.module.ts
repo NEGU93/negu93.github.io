@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +20,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 
+import {AppearDirective} from './timeline/appear';
+//import {AppearOnce} from './timeline/appear-once';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,13 +36,16 @@ import { AboutComponent } from './about/about.component';
     LogoPipe,
     ContactComponent,
     ResumeComponent,
-    AboutComponent
+    AboutComponent,
+    AppearDirective
   ],
   imports: [
     BrowserModule, 
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
+    ScrollingModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent},
       { path: 'timeline', component: TimelineComponent},

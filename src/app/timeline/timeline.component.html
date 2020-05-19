@@ -1,6 +1,9 @@
 <html>
 <body>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--<script src="src/app/timeline/modernizr.js"></script>-->
+  <script src="src/app/timeline/smoothmain.js"></script>
+  <script src="src/app/timeline/jquery-2.0.3.min.js"></script>
+
   <header>
     <form>
       <div class="multiselect">
@@ -32,37 +35,42 @@
     </form>
   </header>
   <section id="cd-timeline" class="cd-container">
-    <div class="cd-timeline-block" *ngFor='let event of filteredEvents'>
-      <div class="cd-timeline-img {{event.eventName}}">
-        <i class="{{event.eventName | logopipe}}"></i>
-      </div> <!-- cd-timeline-img -->
-
-      <div class="cd-timeline-content">
-          <h2>{{event.role}}</h2>
-          <h3 *ngIf="event.department as dept"> {{dept}} </h3>
-          <h3>{{event.enterprise}}</h3>
-          <div class="editor">
-            <p>{{event.description}}</p>
-            <div class="tags" *ngIf="event.tags as tags">
-              <i class="fas fa-tags" style="color: white;"></i>
-              <button *ngFor='let tag of tags'>{{tag}}</button>
-            </div>
-            <div *ngIf="event.certificate as cert">
-              <a href={{cert}}><i class="fas fa-link" style="color: #ffffff;" ></i></a>
-            </div>
-          </div>
-          <div class="wrap"> 
-            <span class="cd-date">
-              <i class="far fa-calendar-alt"></i>
-              <ng-container *ngIf="event.startDate | date:'MM/yyyy' as start">
-                {{start}} -
-              </ng-container>
-              {{event.endDate | date:"MM/yyyy" }}
-            </span>
-            <img class="enterprise-logo" src={{event.logoUrl}} alt="enterprise-logo">
-          </div>
-      </div> <!-- cd-timeline-content -->
-    </div> <!-- cd-timeline-block -->
+    <!--<cdk-virtual-scroll-viewport itemSize="400">-->
+      <div class="cd-timeline-block" *ngFor='let event of filteredEvents; let i = index' (appear)="onAppear(i)"> <!--[@fadeInOut]-->
+        <span class="container-all" *ngIf="hasAppeared[i]" [@fadeInOut]>
+          <div class="cd-timeline-img {{event.eventName}}">
+            <i class="{{event.eventName | logopipe}}"></i>
+          </div> <!-- cd-timeline-img -->
+    
+          <div class="cd-timeline-content">
+              <h2>{{event.role}}</h2>
+              <h3 *ngIf="event.department as dept"> {{dept}} </h3>
+              <h3>{{event.enterprise}}</h3>
+              <div class="editor">
+                <p>{{event.description}}</p>
+                <div class="tags" *ngIf="event.tags as tags">
+                  <i class="fas fa-tags" style="color: white;"></i>
+                  <button *ngFor='let tag of tags'>{{tag}}</button>
+                </div>
+                <div *ngIf="event.certificate as cert">
+                  <a href={{cert}}><i class="fas fa-link" style="color: #ffffff;" ></i></a>
+                </div>
+              </div>
+              <div class="wrap"> 
+                <span class="cd-date">
+                  <i class="far fa-calendar-alt"></i>
+                  <ng-container *ngIf="event.startDate | date:'MM/yyyy' as start">
+                    {{start}} -
+                  </ng-container>
+                  {{event.endDate | date:"MM/yyyy" }}
+                </span>
+                <img class="enterprise-logo" src={{event.logoUrl}} alt="enterprise-logo">
+              </div>
+          </div> <!-- cd-timeline-content -->
+        </span>
+        
+      </div> <!-- cd-timeline-block -->
+    <!--</cdk-virtual-scroll-viewport>-->
   </section> <!-- cd-timeline -->
 </body>
 </html>

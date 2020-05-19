@@ -2,14 +2,26 @@ import { Component, OnInit } from '@angular/core';
 import { IEvent } from './events';
 import { EventService } from './event.service';
 import { ActivatedRoute } from '@angular/router';
-//import * as AOS from 'aos';
+//import {AppearOnce} from './appear-once';
+import { trigger, state, style, animate, transition } from '@angular/animations';
+//import 'src/app/timeline/modernizr.js';
+//import 'src/app/timeline/smoothmain.js';
+//import 'src/app/timeline/jquery-2.0.3.min.js';
 
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.css']
+  styleUrls: ['./timeline.component.css'],
+  animations: [
+    trigger('fadeInOut', [
+      state('void', style({
+        opacity: 0
+      })),
+      transition('void <=> *', animate(1000)),
+    ]),
+  ]
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent implements OnInit  {
   errorMessage = '';
   expanded = false;
   _selectAll : boolean = true;
@@ -130,8 +142,10 @@ export class TimelineComponent implements OnInit {
   };
   filteredEvents: IEvent[]; 
   events: IEvent[] = [];
+  hasAppeared: Array<boolean> = new Array(this.events.length);
 
   constructor(private eventService: EventService, private route: ActivatedRoute) { 
+    //super();
     this.updateSelectAll();
   }
 
@@ -180,6 +194,9 @@ export class TimelineComponent implements OnInit {
       }, 
       error: err => this.errorMessage = err
     });   
+    for (var i = 0;i<this.hasAppeared.length;i++) {
+      this.hasAppeared[i] = false;
+    }
   }
 
   parseData(data : IEvent[]) : IEvent[] {
@@ -225,4 +242,8 @@ export class TimelineComponent implements OnInit {
     }
   }
 
+  onAppear(variable : number){
+    this.hasAppeared[variable] = true;
+    console.log("I have appeared!");
+  }
 }

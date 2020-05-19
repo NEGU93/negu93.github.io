@@ -68,7 +68,6 @@ text-align: justify!important;}
   font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
   font-weight: 200;
   color:#000000;
-  padding-left;
 }
 
 .row{margin-left: 0px!important;margin-right:0px!important;}
@@ -98,6 +97,11 @@ text-align: justify!important;}
 Primary style
 
 -------------------------------- */
+/*
+cdk-virtual-scroll-viewport {
+  height: 80vh;
+  width: 100%;
+}*/
 
 html * {
   -webkit-font-smoothing: antialiased;
@@ -136,6 +140,7 @@ h1, h2 {
 Modules - reusable parts of our design
 
 -------------------------------- */
+
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
@@ -218,7 +223,7 @@ header h1 {
 .cd-timeline-block {
   position: relative;
   margin: 2rem 0;
-  min-height: 300px;
+  height: 400px;
 }
 .cd-timeline-block:after {
   content: "";
@@ -658,7 +663,7 @@ a{
 }*/
 
 /*  Centra l'element al mig de la pĆ gina o del Div*/
-
+/*
   section{
     width:100%;
     display:table;
@@ -667,10 +672,10 @@ a{
     display: table-cell;
     vertical-align:middle;
     text-align:center;
-  }
+  }*/
 
 /* Fi del centrat*/
-/*
+
 
 .trigger{
   background: #F6AE2D;
@@ -763,7 +768,7 @@ a{
 .headline{
   color: #f6ae2d;
 }
-*/
+
 
 .multiselect {
   width: 200px;
