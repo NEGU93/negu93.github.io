@@ -2,42 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { IEvent } from './events';
 import { EventService } from './event.service';
 import { ActivatedRoute } from '@angular/router';
-//import {AppearOnce} from './appear-once';
-import { trigger, state, style, animate, transition } from '@angular/animations';
-//import 'src/app/timeline/modernizr.js';
-//import 'src/app/timeline/smoothmain.js';
-//import 'src/app/timeline/jquery-2.0.3.min.js';
+import { Animations } from '../animation';
 
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.css'],
-  animations: [
-    trigger('fadeInOut', [
-      state('void', style({
-        opacity: 0
-      })),
-      transition('void <=> *', animate(1000)),
-    ]),
-    trigger('EnterFromRight', [
-      state('flyIn', style({ transform: 'translateX(0)' })),
-      transition(':enter', [
-        style({ transform: 'translateX(-100%)' }),
-        animate('0.5s 500ms ease-in')
-      ]),
-    ]),
-    trigger('EnterFromLeft', [
-      state('flyIn', style({ transform: 'translateX(0)' })),
-      transition(':enter', [
-        style({ transform: 'translateX(100%)' }),
-        animate('0.5s 500ms ease-in')
-      ]),
-    ]),
-    trigger("zoom", [
-      state('void', style({transform: 'scale(0.3)', transformOrigin: 'left bottom', opacity: '0'})),,
-      transition("void <=> *", animate( "2000ms cubic-bezier(0.25,1,.25,1)" ))
-    ])
-  ]
+  animations: [Animations.Triggers]
 })
 export class TimelineComponent implements OnInit  {
   errorMessage = '';

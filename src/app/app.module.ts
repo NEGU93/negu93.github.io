@@ -20,8 +20,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 
-import {AppearDirective} from './timeline/appear';
-//import {AppearOnce} from './timeline/appear-once';
+import {AppearDirective} from './appear';
+import { Animations } from './animation';
 
 @NgModule({
   declarations: [

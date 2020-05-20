@@ -146,6 +146,13 @@ i:hover {
     background-color: #F47F24;
 }
 
+.fa-instagram {
+    color: #fd5949;
+}
+.instagram span {
+    background-color: #fd5949;
+}
+
 @-webkit-keyframes bounce {
     0%,  
     100% {
