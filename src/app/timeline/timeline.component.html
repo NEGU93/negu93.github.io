@@ -43,10 +43,10 @@
           </div> <!-- cd-timeline-img -->
     
           <div class="cd-timeline-content">
-              <h2 [@EnterFromLeft]>{{event.role}}</h2>
-              <h3 *ngIf="event.department as dept" [@EnterFromLeft]> {{dept}} </h3>
-              <h3 [@EnterFromLeft]>{{event.enterprise}}</h3>
-              <div class="editor" [@EnterFromLeft]>
+              <h2 [@zoom]>{{event.role}}</h2>
+              <h3 *ngIf="event.department as dept" [@zoom]> {{dept}} </h3>
+              <h3 [@zoom]>{{event.enterprise}}</h3>
+              <div class="editor" [@zoom]>
                 <p>{{event.description}}</p>
                 <div class="tags" *ngIf="event.tags as tags">
                   <i class="fas fa-tags" style="color: white;"></i>
@@ -64,7 +64,7 @@
                   </ng-container>
                   {{event.endDate | date:"MM/yyyy" }}
                 </span>
-                <img class="enterprise-logo" src={{event.logoUrl}} alt="enterprise-logo" [@EnterFromRight]>
+                <img class="enterprise-logo" src={{event.logoUrl}} alt="enterprise-logo" [@zoom]>
               </div>
           </div> <!-- cd-timeline-content -->
         </span>
