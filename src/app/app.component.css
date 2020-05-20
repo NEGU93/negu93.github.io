@@ -105,7 +105,11 @@ li {
 
 /*footer*/
 footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
+    min-height: 150px;
     text-align: center;
     background-color: #5A6B7D;
     padding: 2rem 0;
@@ -117,7 +121,7 @@ footer {
     width: 5rem;
     height: 5rem;
     background-color: #5A6B7D;
-    top: -2rem;
+    /*top: -2rem;*/
     right: 5rem;
     border-radius: 100%;
     display: flex;

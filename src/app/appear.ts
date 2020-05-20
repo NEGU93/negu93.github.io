@@ -3,10 +3,7 @@ import {
   } from '@angular/core';
   import { Observable, Subscription, fromEvent } from 'rxjs';
   import { startWith } from 'rxjs/operators';
-  //import 'rxjs/add/observable/fromEvent';
-  //import 'rxjs/add/operator/startWith';
-  
-  
+    
   
   @Directive({
     selector: '[appear]'
