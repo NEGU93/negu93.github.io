@@ -182,42 +182,42 @@ z-index: -1;
 }
 
 .python-desc.desc-active::after {
-background: url(/assets/images/logos/programming/python.svg);
+background: url(https://negu93.github.io/agustinbarrachina/assets/images/logos/programming/python.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .matlab-desc.desc-active::after {
-background: url(/assets/images/logos/programming/matlab.png);
+background: url(https://negu93.github.io/agustinbarrachina/assets/images/logos/programming/matlab.png);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .cpp-desc.desc-active::after {
-background: url(/assets/images/logos/programming/c.svg);
+background: url(https://negu93.github.io/agustinbarrachina/assets/images/logos/programming/c.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .java-desc.desc-active::after {
-background: url(/assets/images/logos/programming/java.svg);
+background: url(https://negu93.github.io/agustinbarrachina/assets/images/logos/programming/java.svg);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .asm-desc.desc-active::after {
-background: url(/assets/images/logos/programming/asm.png);
+background: url(https://negu93.github.io/agustinbarrachina/assets/images/logos/programming/asm.png);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
 }
 
 .vhdl-desc.desc-active::after {
-background: url(/assets/images/logos/programming/vhdl.png);
+background: url(https://negu93.github.io/agustinbarrachina/assets/images/logos/programming/vhdl.png);
 background-repeat: no-repeat;
 background-size: contain;
 background-position: right center;
