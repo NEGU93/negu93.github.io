@@ -223,7 +223,6 @@ header h1 {
 .cd-timeline-block {
   position: relative;
   margin: 2rem 0;
-  height: 400px;
 }
 .cd-timeline-block:after {
   content: "";
@@ -398,6 +397,7 @@ header h1 {
 .cd-timeline-content .enterprise-logo {
   max-width: 400px;
   max-height: 200px;
+  min-width: 100%;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   color: #ffffff;
