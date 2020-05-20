@@ -114,7 +114,7 @@ html * {
   box-sizing: border-box;
 }
 
-body {
+#body {
   font-size: 100%;
   font-family: "Droid Serif", serif!important;
   color: #7f8c97;
