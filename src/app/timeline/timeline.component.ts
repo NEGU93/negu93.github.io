@@ -32,6 +32,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
         style({ transform: 'translateX(100%)' }),
         animate('0.5s 500ms ease-in')
       ]),
+    ]),
+    trigger("zoom", [
+      state('void', style({transform: 'scale(0.3)', transformOrigin: 'left bottom', opacity: '0'})),,
+      transition("void <=> *", animate( "2000ms cubic-bezier(0.25,1,.25,1)" ))
     ])
   ]
 })
