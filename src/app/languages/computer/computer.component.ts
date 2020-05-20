@@ -12,8 +12,8 @@ export class ComputerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    var require: any;
-    require('src/app/languages/computer/script.js');
+    //var require: any;
+    //require('src/app/languages/computer/script.js');
     /*var System: any; 
     System.import('script-loader!src/app/languages/computer/script.js').then(file=>{
       //file.test(); // perform additional interactions after the resource has been asynchronously fetched
