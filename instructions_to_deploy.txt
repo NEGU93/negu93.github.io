@@ -1,3 +1,5 @@
-1. Add changes to gh-pages branch
+Check eveything is working correctly (ng serve --open) then checkout into gh-pages
+
+1. git merge master  (To add all new changes to that branch)
 2. ng build --prod
-3. ngh (?
+3. ngh
