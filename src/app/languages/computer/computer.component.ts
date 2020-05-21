@@ -14,13 +14,11 @@ export class ComputerComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadAPI = new Promise(resolve => {
-      console.log("resolving promise...");
       this.loadScript();
     });
   }
 
   loadScript() {
-    console.log("preparing to load...");
     let node = document.createElement("script");
     node.src = this.url;
     node.type = "text/javascript";
