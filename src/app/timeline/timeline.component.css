@@ -192,6 +192,9 @@ header h1 {
   }
 }*/
 
+header {
+  margin-bottom: 200px;
+}
 #cd-timeline {
   position: relative;
   padding: 2em 0;
@@ -398,7 +401,8 @@ header h1 {
 .cd-timeline-content .enterprise-logo {
   max-width: 400px;
   max-height: 200px;
-  min-width: 100%;
+  /*min-width: 100%;*/
+  width: 50vw;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   color: #ffffff;
