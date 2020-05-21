@@ -51,13 +51,8 @@ export class TimelineComponent implements OnInit  {
     //AOS.init();
     let id : string = this.route.snapshot.paramMap.get('id');
     if (id in this.listFilter) {
-      this.listFilter.experience = false;
-      this.listFilter.education = false;
-      this.listFilter.teaching = false;
-      //this.listFilter.publication = false;
-      this.listFilter.course = false;
-      this.listFilter.competition = false;
-      this.listFilter.misc = false;
+      this.selectAll = false;   // This will set all to false automatically.
+      this.updateSelectAll();
       switch(id) {
         case "experience": 
           this.listFilter.experience = true;

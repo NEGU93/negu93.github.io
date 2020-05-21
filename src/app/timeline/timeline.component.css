@@ -401,9 +401,15 @@ header {
 .cd-timeline-content .enterprise-logo {
   max-width: 400px;
   max-height: 200px;
+  height: auto;
   /*min-width: 100%;*/
-  width: 50vw;
 }
+@media (max-width: 400px) {
+  .cd-timeline-content .enterprise-logo {
+    width: 50vw;
+  }
+}
+
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   color: #ffffff;
   font-size: 13px;
