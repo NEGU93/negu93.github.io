@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import 'src/app/languages/computer/script.js';
+//import 'src/app/languages/computer/script.js';
 
 @Component({
   selector: 'app-computer',
@@ -7,17 +7,26 @@ import 'src/app/languages/computer/script.js';
   styleUrls: ['./computer.component.css']
 })
 export class ComputerComponent implements OnInit { 
-  
+  url = "assets/js/velocity.js";
+  loadAPI : any;
 
   constructor() { }
 
   ngOnInit(): void {
-    //var require: any;
-    //require('src/app/languages/computer/script.js');
-    /*var System: any; 
-    System.import('script-loader!src/app/languages/computer/script.js').then(file=>{
-      //file.test(); // perform additional interactions after the resource has been asynchronously fetched
-    });*/
+    this.loadAPI = new Promise(resolve => {
+      console.log("resolving promise...");
+      this.loadScript();
+    });
+  }
+
+  loadScript() {
+    console.log("preparing to load...");
+    let node = document.createElement("script");
+    node.src = this.url;
+    node.type = "text/javascript";
+    node.async = true;
+    node.charset = "utf-8";
+    document.getElementsByTagName("head")[0].appendChild(node);
   }
 
   skillBarAnimate( skill : string ) : void {
