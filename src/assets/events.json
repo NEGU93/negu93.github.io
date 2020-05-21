@@ -37,7 +37,7 @@
         "department": "MATS / SONDRA",
         "enterprise": "ONERA / CentraleSupelec / DGA",
         "role": "PhD on Complex-Valued Neural Networks for radar applications",
-        "logoUrl": "assets/images/logos/enterprises/onera.png",
+        "logoUrl": "assets/images/logos/enterprises/onera-full.png",
         "location": "Palaiseau, France",
         "tags": ["Machine Learning", "Python"]
     },
@@ -49,7 +49,7 @@
         "department": "SONDRA",
         "enterprise": "CentraleSupelec",
         "role": "Engineer",
-        "logoUrl": "assets/images/logos/enterprises/CentraleSupelec/cs-no-back-black-letters.png",
+        "logoUrl": "assets/images/logos/enterprises/CentraleSupelec/cs-univ-paris-saclay-no-back.png",
         "location": "Gif-Sur-Yvette, France",
         "tags": ["Machine Learning", "Python"] 
     },
