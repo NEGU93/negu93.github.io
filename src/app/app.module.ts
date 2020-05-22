@@ -50,6 +50,7 @@ import { Animations } from './animation';
       { path: 'home', component: HomeComponent},
       { path: 'timeline', component: TimelineComponent},
       { path: 'timeline/:id', component: TimelineComponent},
+      { path: 'computer', component: ComputerComponent},
       { path: '', redirectTo: 'home', pathMatch: 'full'},
       { path: '**', redirectTo: 'home', pathMatch: 'full'}
     ])  //, { enableTracing: true }

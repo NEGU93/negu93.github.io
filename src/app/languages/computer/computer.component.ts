@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subscription, fromEvent } from 'rxjs';
+import { map, throttleTime, startWith } from 'rxjs/operators';
 //import 'src/app/languages/computer/script.js';
 
 @Component({
@@ -9,75 +11,70 @@ import { Component, OnInit } from '@angular/core';
 export class ComputerComponent implements OnInit { 
   url = "assets/js/velocity.js";
   loadAPI : any;
+  mobile : boolean;
+  subscription: Subscription;
+  isScreenSmall: Observable<boolean>;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.loadAPI = new Promise(resolve => {
-      this.loadScript();
-    });
-    $(".skillbars").each(function(idNr) {
-      var color = $(this).attr('data-color'),
-      percent = $(this).attr('data-pr'),
-      caption = $(this).attr('data-cap'),
-      heightBar = $(this).attr('data-height'),
-      widthBar = $(this).attr('data-width'),
-      skillLevel = "";
-      let getPerAsNum;
-      if (!heightBar) {
-        heightBar = "5px";
-      }
-      if (!widthBar) {
-        widthBar = "400px";
-      }
-      getPerAsNum = parseInt(percent.split("%")[0], 10);
-      if (getPerAsNum < 50) {
-        skillLevel = "Basic";
-      }
-      else if ( getPerAsNum < 70 ) {
-        skillLevel = "Standard";
-      }
-      else if ( getPerAsNum < 90 ) {
-        skillLevel = "Advanced";
-      }
-      else if ( getPerAsNum <= 100 ) {
-        skillLevel = "Expert";
-      }
-      let text: string = "";
-      let para = this.querySelector("p");
-      if (para) {
-        console.log(this.querySelector("p"));
-        text = para.innerHTML;
-        para.parentNode.removeChild(para);
-      }
+    console.log(screen.width);
+    // Checks if screen size is less than 700 pixels
+    const checkScreenSize = () => document.body.offsetWidth < 700;
 
-  
-      var skillHtml = "<div class='skillbar'>" +
-        "<h1 style='display: none; margin-bottom: .2em; margin-top: 1rem; color: #34495e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 100;'>" + caption + "</h1>" +
-        "<div class='skillbg' style='display: none; width: " + widthBar + "; height: " + heightBar + "; background-color: #BFBFBF;'>" +
-        "<div class='skill-skill-" + idNr + "' style='background-color: " + color + "; height: " + heightBar + ";' />" +
-        "</div>" +
-        "<p>" + skillLevel + " | " + percent + "</p>" +
-        "</div>";
-      setTimeout(function() {
-        $(".skill-skill-" + idNr).css({
-          width: '0px'
-        });
-        $(".skillbar h1").fadeIn(500, function() {
-          $(".skillbg").fadeIn(500, function() {
-            $(".skillbar p").fadeIn(500, function() {
-              $("div.skill-skill-" + idNr).animate({
-                width: percent
-              }, 1500);
-            });
-          });
-        });
-      }, 100);
-      $(this).prepend(skillHtml);
+    // Create observable from window resize event throttled so only fires every 500ms
+    const screenSizeChanged = fromEvent(window, 'resize').pipe(throttleTime(500), map(checkScreenSize));
+
+    this.isScreenSmall = screenSizeChanged.pipe(startWith(checkScreenSize()))
+    this.subscription = this.isScreenSmall.subscribe(data => {
+      this.mobile = data;
+      this.loadAnimations();
     });
   }
 
-  loadScript() {
+  ngAfterViewInit() {
+    this.loadAnimations();
+  }
+
+  loadAnimations() {
+    if (!this.mobile) {
+      this.loadAPI = new Promise(resolve => {
+        this.loadScript();
+      });
+    }
+    else {
+      this.animateMobileSkillBar();
+    }
+  }
+
+  animateMobileSkillBar() : void {
+    //$( document ).ready(function() {
+      $(".skillbars").each(function() {
+        let percent = $(this).attr('data-pr');
+        let getPerAsNum = parseInt(percent.split("%")[0], 10);
+        let skillLevel : string;
+        if (getPerAsNum < 50) {
+          skillLevel = "Basic";
+        }
+        else if ( getPerAsNum < 70 ) {
+          skillLevel = "Standard";
+        }
+        else if ( getPerAsNum < 90 ) {
+          skillLevel = "Advanced";
+        }
+        else if ( getPerAsNum <= 100 ) {
+          skillLevel = "Expert";
+        }
+        $(".skill-text", this).html(skillLevel + " | " + percent );
+        $(".skill-skill", this).css({ width: '0px' });
+        $(".skill-skill", this).animate({
+          width: percent
+        }, 1500);
+      });
+    //});
+  }
+
+  loadScript() : void {
     let node = document.createElement("script");
     node.src = this.url;
     node.type = "text/javascript";
@@ -103,7 +100,7 @@ export class ComputerComponent implements OnInit {
     else if ( getPerAsNum <= 100 ) {
       skillLevel = "Expert";
     }
-    var skillHtml = "<div><p style='display: none; margin-bottom: 3rem;'>" + skillLevel + " | " + percent + "</p></div>";
+    //var skillHtml = "<div><p style='display: none; margin-bottom: 3rem;'>" + skillLevel + " | " + percent + "</p></div>";
     $(".skill-text").html(skillLevel + " | " + percent );
 
     $(".skill-skill-" + skill).css({ width: '0px' });
