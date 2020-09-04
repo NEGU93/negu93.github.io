@@ -240,8 +240,11 @@ transform: rotate(120deg);
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
   border: 0px solid;
-  transform: scale(1.1);
 }
+
+/*.hex-wrap:hover {
+  transform: scale(1.1);
+}*/
 
 .hex-wrap .label {
   position: absolute;

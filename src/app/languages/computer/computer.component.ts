@@ -18,7 +18,7 @@ export class ComputerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(screen.width);
+    // console.log(screen.width);
     // Checks if screen size is less than 700 pixels
     const checkScreenSize = () => document.body.offsetWidth < 700;
 
@@ -32,9 +32,10 @@ export class ComputerComponent implements OnInit {
     });
   }
 
-  ngAfterViewInit() {
-    this.loadAnimations();
-  }
+  //ngAfterViewInit() {
+    //console.log("Load animations from ngAfterViewInit");
+    //this.loadAnimations();
+  //}
 
   loadAnimations() {
     if (!this.mobile) {
@@ -84,7 +85,6 @@ export class ComputerComponent implements OnInit {
   }
 
   skillBarAnimate( skill : string ) : void {
-    console.log("animate skill bar");
     let percent : string = $("div.skill-skill-" + skill).attr('data-pr');
     let getPerAsNum = parseInt(percent.split("%")[0], 10);
     let skillLevel : string;

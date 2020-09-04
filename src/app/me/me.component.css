@@ -8,6 +8,15 @@ html {
     align-items: center;
 }
 
+.profile-image {
+    transition: transform .2s; /* Animation */
+}
+
+  
+.profile-image:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .intro {
     margin-top: 120px;
     display: flex;
