@@ -191,6 +191,13 @@ header h1 {
     font-size: 3.7rem;
   }
 }*/
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 header {
   margin-bottom: 200px;

@@ -66,6 +66,30 @@ h2 {
     transition: .5s;
 }
 
+.cv-download {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+
+
+
+
 /*Download button*/
 .button {
     margin-top: 3rem;

@@ -28,16 +28,15 @@ export class ComputerComponent implements OnInit {
     this.isScreenSmall = screenSizeChanged.pipe(startWith(checkScreenSize()))
     this.subscription = this.isScreenSmall.subscribe(data => {
       this.mobile = data;
-      this.loadAnimations();
     });
   }
 
-  //ngAfterViewInit() {
-    //console.log("Load animations from ngAfterViewInit");
-    //this.loadAnimations();
-  //}
+  ngAfterViewInit() {
+    this.loadAnimations();
+  }
 
   loadAnimations() {
+    console.log("Load animations");
     if (!this.mobile) {
       this.loadAPI = new Promise(resolve => {
         this.loadScript();
@@ -76,6 +75,7 @@ export class ComputerComponent implements OnInit {
   }
 
   loadScript() : void {
+    console.log("load script");
     let node = document.createElement("script");
     node.src = this.url;
     node.type = "text/javascript";
