@@ -126,7 +126,7 @@ footer {
     width: 5rem;
     height: 5rem;
     background-color: #5A6B7D;
-    /*top: -2rem;*/
+    bottom: 1rem;
     right: 5rem;
     border-radius: 100%;
     display: flex;
@@ -141,6 +141,11 @@ footer {
 
 .up:hover i {
     color: black;
+    transition: all .5s;
+	animation: bounce .3s infinite;
+	-webkit-animation: bounce .3s infinite;
+	-moz-animation: bounce .3s infinite;
+	-o-animation: bounce .3s infinite; 
 }
 
 .copyright p {
