@@ -16,15 +16,15 @@ export class HumanComponent implements OnInit {
       percent = $(this).attr('data-pr'),
       caption = $(this).attr('data-cap'),
       heightBar = $(this).attr('data-height'),
-      widthBar = $(this).attr('data-width'),
+      //widthBar = $(this).attr('data-width'),
       skillLevel = "";
       let getPerAsNum;
       if (!heightBar) {
         heightBar = "5px";
       }
-      if (!widthBar) {
-        widthBar = "400px";
-      }
+      /*if (!widthBar) {
+        widthBar = "300px";
+      }*/
       getPerAsNum = percent.split("%");
       if (getPerAsNum[0] == 25 || getPerAsNum[0] < 15) {
         skillLevel = "A1";
@@ -58,7 +58,7 @@ export class HumanComponent implements OnInit {
   
       var skillHtml = "<div class='skillbar'>" +
         "<h1 style='display: none; margin-bottom: .2em; margin-top: 2rem; color: #34495e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 100;'>" + caption + "</h1>" +
-        "<div class='skillbg' style='display: none; width: " + widthBar + "; height: " + heightBar + "; background-color: #BFBFBF;'>" +
+        "<div class='skillbg' style='display: none; max-width: 500px; height: " + heightBar + "; background-color: #BFBFBF;'>" +
         "<div class='skill-skill-" + idNr + "' style='background-color: " + color + "; height: " + heightBar + ";' />" +
         "</div>" +
         "<p style='display: none; margin-bottom: 3rem;'>" + skillLevel + " | " + text + "</p>" +

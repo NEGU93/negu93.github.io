@@ -148,7 +148,7 @@
     {
         "eventName": "course",
         "endDate": "2019-09-24",
-        "description": "Online Course offered by Andrew Ng. The detailed information of the course can be found in https://www.coursera.org/learn/machine-learning",
+        "description": "Online Course offered by Andrew Ng. The detailed information of the course click on attached link.",
         "enterprise": "Coursera / Stanford University",
         "role": "Machine Learning",
         "logoUrl": "assets/images/logos/enterprises/s.png",

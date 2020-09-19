@@ -155,6 +155,13 @@ i:hover {
     background-color: #F47F24;
 }
 
+.fa-orcid {
+    color: #A5CD36;
+}
+.orcid span {
+    background-color: #A5CD36;
+}
+
 .fa-instagram {
     color: #fd5949;
 }
