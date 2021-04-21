@@ -21,8 +21,8 @@
             <input type="checkbox" id="experience" [(ngModel)]="listFilter['experience']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Work Experience</label>
           <label for="teaching">
             <input type="checkbox" id="teaching" [(ngModel)]="listFilter['teaching']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Teachings</label>
-          <!--<label for="publication">
-            <input type="checkbox" id="publication" [(ngModel)]="publication" [ngModelOptions]="{standalone: true}"/>Publications</label>-->
+          <label for="publication">
+            <input type="checkbox" id="publication" [(ngModel)]="listFilter['publication']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Publications</label>
           <label for="course">
             <input type="checkbox" id="course" [(ngModel)]="listFilter['course']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Courses</label>
           <label for="competition">

@@ -15,7 +15,7 @@ export class LogoPipe implements PipeTransform {
                 ret_value = "fas fa-chalkboard-teacher fa-lg"
                 break;
             case "publication":
-                ret_value = "fas fa-diploma fa-lg"
+                ret_value = "fas fa-book fa-lg"
                 break;
             case "course":
                 ret_value = "fas fa-certificate fa-lg";

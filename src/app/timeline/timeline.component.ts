@@ -18,7 +18,7 @@ export class TimelineComponent implements OnInit  {
     "experience" : true,
     "education" : true,
     "teaching" : true,
-    //"publication" : true,
+    "publication" : true,
     "course" : true,
     "competition" : true,
     "misc" : true
@@ -36,6 +36,7 @@ export class TimelineComponent implements OnInit  {
     this.listFilter.education = value;
     this.listFilter.experience = value;
     this.listFilter.teaching = value;
+    this.listFilter.publication = value;
     this.listFilter.course = value;
     this.listFilter.competition = value;
     this.listFilter.misc = value;
@@ -64,7 +65,7 @@ export class TimelineComponent implements OnInit  {
           this.listFilter.teaching = true;
           break;
         case "publication":
-          //this.listFilter.publication = true;
+          this.listFilter.publication = true;
           break;
         case "course":
           this.listFilter.course = true;

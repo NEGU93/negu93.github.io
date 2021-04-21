@@ -1,5 +1,12 @@
 [
     {
+        "eventName": "publication",
+        "endDate": "2021-06",
+        "description": "J Agustin BARRACHINA et al. 'Complex-Valued Neural Network for Classification Perspectives: An Example on Non-Circular Data'",
+        "logoUrl": "assets/images/logos/publish/SP21_Logo_FullOutlines.svg",
+        "location": "Toronto, Canada"
+    },
+    {
         "eventName": "education",
         "startDate": "2012-01",
         "endDate": "2018-12",
@@ -126,8 +133,8 @@
     {
         "eventName": "teaching",
         "startDate": "2019-10",
-        "endDate": "2019-12",
-        "description": "Tenured Professor / Chair Holder in the course Digital Signal Processing (DSP) at École Poytechnique de l'université Paris Sud. I was in charge of all the course, organization, theoretical and practical lectures, exams and grading",
+        "endDate": "2020-12",
+        "description": "Tenured Professor / Chair Holder in the course Digital Signal Processing (DSP) at École Poytechnique de l'université Paris Sud two years in a row. I was in charge of all the course, organization, theoretical and practical lectures, exams and grading",
         "enterprise": "École Polytechnique de l'université Paris Sud",
         "role": "Tenured Professor",
         "logoUrl": "assets/images/logos/enterprises/polytech.png",
