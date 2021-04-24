@@ -13,6 +13,7 @@ import { Animations } from '../animation';
 export class TimelineComponent implements OnInit  {
   errorMessage = '';
   expanded = false;
+  tagExpanded = false;
 
   listFilter = {
     "experience" : true,
@@ -42,6 +43,7 @@ export class TimelineComponent implements OnInit  {
     this.listFilter.misc = value;
   };
   filteredEvents: IEvent[]; 
+  tagsOfEvents = new Set();
   events: IEvent[] = [];
   hasAppeared: Array<boolean> = new Array(this.events.length);
 
@@ -85,7 +87,8 @@ export class TimelineComponent implements OnInit  {
       next: data => {
         this.events = this.parseData(data);
         this.filteredEvents =  this.performFilter();
-        //console.log(this.filteredEvents.length);
+        this.events.forEach(event => event.tags && event.tags.forEach(tag => this.tagsOfEvents.add(tag)));
+        console.log(this.tagsOfEvents);
       }, 
       error: err => this.errorMessage = err
     });   
@@ -93,7 +96,6 @@ export class TimelineComponent implements OnInit  {
       this.hasAppeared[i] = false;
     }
     this.hasAppeared[0] = true;
-    //this.hasAppeared[1] = true;
   }
 
   parseData(data : IEvent[]) : IEvent[] {
@@ -143,6 +145,17 @@ export class TimelineComponent implements OnInit  {
     }
   }
 
+  showTags() : void {
+    var checkboxes = document.getElementById("tag_checkboxes");
+    if (!this.tagExpanded) {
+      checkboxes.style.display = "block";
+      this.tagExpanded = true;
+    } else {
+      checkboxes.style.display = "none";
+      this.tagExpanded = false;
+    }
+  }
+
   onAppear(variable : number){
     this.hasAppeared[variable] = true;
   }
@@ -182,7 +195,7 @@ export class TimelineComponent implements OnInit  {
       this.selectAll = false;
     }
     else if (this.allTrue()) {
-      console.log("All true");
+      //console.log("All true");
       $(document).ready(function() {
         $("#checkboxes span").text('Deselect All');
       });

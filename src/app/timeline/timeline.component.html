@@ -3,7 +3,7 @@
   <script src="src/app/timeline/smoothmain.js"></script>
   <script src="src/app/timeline/jquery-2.0.3.min.js"></script>
 
-  <header>
+  <!--<header>
     <form>
       <div class="multiselect">
         <div class="selectBox" (click)="showCheckboxes()">
@@ -12,27 +12,50 @@
           </select>
           <div class="overSelect"></div>
         </div>
-        <div id="checkboxes">
-          <label for="select-all">
-            <input type="checkbox" id="select-all" [(ngModel)]="selectAll" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/><span id="selectallspan">Deselect All</span></label>
-          <label for="education">
-            <input type="checkbox" id="education" [(ngModel)]="listFilter['education']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Education</label>
-          <label for="experience">
-            <input type="checkbox" id="experience" [(ngModel)]="listFilter['experience']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Work Experience</label>
-          <label for="teaching">
-            <input type="checkbox" id="teaching" [(ngModel)]="listFilter['teaching']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Teachings</label>
-          <label for="publication">
-            <input type="checkbox" id="publication" [(ngModel)]="listFilter['publication']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Publications</label>
-          <label for="course">
-            <input type="checkbox" id="course" [(ngModel)]="listFilter['course']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Courses</label>
-          <label for="competition">
-            <input type="checkbox" id="competition" [(ngModel)]="listFilter['competition']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Competitions</label>
-          <label for="misc">
-            <input type="checkbox" id="misc" [(ngModel)]="listFilter['misc']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>Miscellaneous</label>
-        </div>
       </div>
     </form>
-  </header>
+  </header>-->
+  <div class="sidebar">
+    <ul>
+      <li>
+        <button (click)="showCheckboxes()">Type<i class="fas fa-angle-down" *ngIf="!expanded"></i><i class="fas fa-angle-up" *ngIf="expanded"></i></button>
+        <div id="checkboxes">
+          <div class="check_item">
+            <input class="label__checkbox" type="checkbox" id="select-all" [(ngModel)]="selectAll" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>
+            <label for="select-all"><span id="selectallspan">Deselect All</span></label>
+          </div><div class="check_item">
+            <input class="label__checkbox" type="checkbox" id="education" [(ngModel)]="listFilter['education']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>
+            <label for="education">Education</label>
+          </div><div class="check_item">
+            <input class="label__checkbox" type="checkbox" id="experience" [(ngModel)]="listFilter['experience']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>
+            <label for="experience">Work Experience</label>
+          </div><div class="check_item">
+            <input class="label__checkbox" type="checkbox" id="teaching" [(ngModel)]="listFilter['teaching']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>
+            <label for="teaching">Teachings</label>
+          </div><div class="check_item">
+            <input class="label__checkbox" type="checkbox" id="publication" [(ngModel)]="listFilter['publication']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>
+            <label for="publication">Publications</label>
+          </div><div class="check_item">
+            <input class="label__checkbox" type="checkbox" id="course" [(ngModel)]="listFilter['course']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>
+            <label for="course">Courses</label>
+          </div><div class="check_item">
+            <input class="label__checkbox" type="checkbox" id="competition" [(ngModel)]="listFilter['competition']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>
+            <label for="competition">Competitions</label>
+          </div><div class="check_item">
+            <input class="label__checkbox" type="checkbox" id="misc" [(ngModel)]="listFilter['misc']" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>
+            <label for="misc">Miscellaneous</label>
+          </div>
+        </div>
+      </li>
+      <li><button (click)="showTags()">Tag<i class="fas fa-angle-down" *ngIf="!tagExpanded"></i><i class="fas fa-angle-up" *ngIf="tagExpanded"></i></button>
+        <div class="container" id="tag_checkboxes">
+          <ul class="ks-cboxtags" *ngFor='let tag of tagsOfEvents'>
+            <li><input type="checkbox_tags" id="checkbox_tags" value="{{tag}}"><label for="checkbox_tags">{{tag}}</label></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
   <section id="cd-timeline" class="cd-container">
     <!--<cdk-virtual-scroll-viewport itemSize="400">-->
       <div class="cd-timeline-block" *ngFor='let event of filteredEvents; let i = index' (appear)="onAppear(i)"> <!--[@fadeInOut]-->
@@ -40,7 +63,6 @@
           <div class="cd-timeline-img {{event.eventName}}">
             <i class="{{event.eventName | logopipe}}"></i>
           </div> <!-- cd-timeline-img -->
-    
           <div class="cd-timeline-content">
               <h2 [@zoom]>{{event.role}}</h2>
               <h3 *ngIf="event.department as dept" [@zoom]> {{dept}} </h3>
