@@ -19,7 +19,7 @@
     <ul>
       <li>
         <button (click)="showCheckboxes()">Type<i class="fas fa-angle-down" *ngIf="!expanded"></i><i class="fas fa-angle-up" *ngIf="expanded"></i></button>
-        <div id="checkboxes">
+        <div id="type_checkboxes">
           <div class="check_item">
             <input class="label__checkbox" type="checkbox" id="select-all" [(ngModel)]="selectAll" [ngModelOptions]="{standalone: true}" (ngModelChange)="changeToCheckbox()"/>
             <label for="select-all"><span id="selectallspan">Deselect All</span></label>
@@ -50,7 +50,7 @@
       <li><button (click)="showTags()">Tag<i class="fas fa-angle-down" *ngIf="!tagExpanded"></i><i class="fas fa-angle-up" *ngIf="tagExpanded"></i></button>
         <div class="container" id="tag_checkboxes">
           <ul class="ks-cboxtags" *ngFor='let tag of tagsOfEvents'>
-            <li><input type="checkbox_tags" id="checkbox_tags" value="{{tag}}"><label for="checkbox_tags">{{tag}}</label></li>
+            <li><input type="checkbox" id="{{tag}}" value="{{tag}}" (change)="toggleTag(tag)"><label for="{{tag}}">{{tag}}</label></li>
           </ul>
         </div>
       </li>

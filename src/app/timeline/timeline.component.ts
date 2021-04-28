@@ -3,6 +3,7 @@ import { IEvent } from './events';
 import { EventService } from './event.service';
 import { ActivatedRoute } from '@angular/router';
 import { Animations } from '../animation';
+import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Component({
   selector: 'app-timeline',
@@ -30,7 +31,7 @@ export class TimelineComponent implements OnInit  {
   };
   set selectAll(value : boolean) {
     this._selectAll = value;
-    let input = document.getElementsByTagName('input');
+    let input = document.getElementsByClassName('label__checkbox') as HTMLCollectionOf<HTMLInputElement>;   // .getElementsByTagName('input')
     for(let i = 0; i < input.length; i++) {
       input[i].checked = value;
     }
@@ -43,9 +44,10 @@ export class TimelineComponent implements OnInit  {
     this.listFilter.misc = value;
   };
   filteredEvents: IEvent[]; 
-  tagsOfEvents = new Set();
   events: IEvent[] = [];
   hasAppeared: Array<boolean> = new Array(this.events.length);
+  tagsOfEvents = new Set();
+  tagFilter = new Set();
 
   constructor(private eventService: EventService, private route: ActivatedRoute) { 
   }
@@ -88,7 +90,7 @@ export class TimelineComponent implements OnInit  {
         this.events = this.parseData(data);
         this.filteredEvents =  this.performFilter();
         this.events.forEach(event => event.tags && event.tags.forEach(tag => this.tagsOfEvents.add(tag)));
-        console.log(this.tagsOfEvents);
+        //console.log(this.tagsOfEvents);
       }, 
       error: err => this.errorMessage = err
     });   
@@ -124,7 +126,9 @@ export class TimelineComponent implements OnInit  {
     for (var event of this.events) {
       if (this.listFilter.hasOwnProperty(event.eventName)) {
         if (this.listFilter[event.eventName]) {
-          temporalEvent.push(event);
+          if (this.tagFilter.size==0 || (event.tags && event.tags.some((tag) => this.tagFilter.has(tag)))) {
+            temporalEvent.push(event);
+          }
         }
       }
       else {
@@ -135,7 +139,7 @@ export class TimelineComponent implements OnInit  {
   }
 
   showCheckboxes() : void {
-    var checkboxes = document.getElementById("checkboxes");
+    var checkboxes = document.getElementById("type_checkboxes");
     if (!this.expanded) {
       checkboxes.style.display = "block";
       this.expanded = true;
@@ -187,19 +191,35 @@ export class TimelineComponent implements OnInit  {
   }
 
   updateSelectAll() {
+    /* 
+    Changes the value of Select all if all checkboxes are in the same state.
+    */
     //console.log("Update select all");
     if (this.allFalse()) {
       $(document).ready(function() {
-        $("#checkboxes span").text('Select All');
+        $("#type_checkboxes span").text('Select All');
       });
       this.selectAll = false;
     }
     else if (this.allTrue()) {
       //console.log("All true");
       $(document).ready(function() {
-        $("#checkboxes span").text('Deselect All');
+        $("#type_checkboxes span").text('Deselect All');
       });
       this.selectAll = true;
     }
+  }
+
+  toggleTag(tagName) {
+    if (this.tagFilter.has(tagName)) {
+      //console.log("Deleting " + tagName);
+      this.tagFilter.delete(tagName);
+    }
+    else {
+      //console.log("Adding " + tagName);
+      this.tagFilter.add(tagName);
+    }
+    //console.log(this.tagFilter);
+    this.filteredEvents = this.performFilter();
   }
 }
