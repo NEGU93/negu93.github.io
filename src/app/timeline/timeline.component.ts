@@ -152,7 +152,7 @@ export class TimelineComponent implements OnInit  {
   showTags() : void {
     var checkboxes = document.getElementById("tag_checkboxes");
     if (!this.tagExpanded) {
-      checkboxes.style.display = "block";
+      checkboxes.style.display = "flex";
       this.tagExpanded = true;
     } else {
       checkboxes.style.display = "none";

@@ -6,6 +6,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    overflow-y: hidden; 
 }
 
 html * {
@@ -25,7 +26,7 @@ html * {
   min-height: 100vh;
   font-family: "Droid Serif", serif!important;
   color: #7f8c97;
-  background: #f2f2f2!important;
+  /*background: #f2f2f2!important;*/
 }
 
 a {
@@ -792,9 +793,9 @@ ul.ks-cboxtags li label{
   background-color: rgba(255, 255, 255, .9);
   border: 2px solid rgba(139, 139, 139, .3);
   color: #adadad;
-  border-radius: 25px;
+  border-radius: 20px;
   white-space: nowrap;
-  margin: 3px 0px;
+  margin: 3px 1.5px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -843,12 +844,12 @@ ul.ks-cboxtags li input[type="checkbox"] {
   position: absolute;
   opacity: 0;
 }
-ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+/*ul.ks-cboxtags li input[type="checkbox"]:focus + label {
   border: 2px solid #12bbd4;
-}
+}*/
 
 #tag_checkboxes {
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
 }
