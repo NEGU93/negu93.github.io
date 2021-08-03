@@ -6,3 +6,9 @@ Check eveything is working correctly (ng serve --open) then checkout into gh-pag
 2. ng build --prod --base-href "https://negu93.github.io/agustinbarrachina/"
 3. ngh
 
+New reposotory:
+
+1. Clone repository
+2. Install angular with `npm update` (and if it does not work, `npm install`)
+3. 
+
