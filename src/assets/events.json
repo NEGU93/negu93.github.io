@@ -169,6 +169,17 @@
     },
     {
         "eventName": "course",
+        "endDate": "2021-08-03",
+        "description": "Online course. A practical approach to deep learning for software developers",
+        "enterprise": "Udacity / TensorFlow",
+        "role": "Intro to TensorFlow for Deep Learning by TensorFlow",
+        "logoUrl": "assets/images/logos/enterprises/s.png",
+        "location": "online Udacity",
+        "certificate": "https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187",
+        "tags": ["Machine Learning", "TensorFlow"]
+    },
+    {
+        "eventName": "course",
         "endDate": "2020-07-29",
         "description": "Dive into TypeScript, an influential language for web development. Discover how Angular and Nest JS unite to create large scale JavaScript applications.",
         "enterprise": "SoloLearn",
