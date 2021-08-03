@@ -2,10 +2,13 @@
     {
         "eventName": "publication",
         "endDate": "2021-06",
+        "role": "Conference Publication",
+        "enterprise": "IEEE ICASSP 2021",    	
         "description": "J Agustin BARRACHINA et al. 'Complex-Valued Neural Network for Classification Perspectives: An Example on Non-Circular Data'",
         "logoUrl": "assets/images/logos/publish/SP21_Logo_FullOutlines.svg",
         "certificate": "https://ieeexplore.ieee.org/document/9413814",
-        "location": "Toronto, Canada"
+        "location": "Toronto, Canada",
+        "tags": ["Machine Learning"]
     },
     {
         "eventName": "education",
@@ -163,6 +166,39 @@
         "location": "online Coursera",
         "certificate": "https://coursera.org/share/0f8d193d372dd33be7b3d39e23317594",
         "tags": ["Machine Learning", "Matlab"]
+    },
+    {
+        "eventName": "course",
+        "endDate": "2020-07-29",
+        "description": "Dive into TypeScript, an influential language for web development. Discover how Angular and Nest JS unite to create large scale JavaScript applications.",
+        "enterprise": "SoloLearn",
+        "role": "Angular + NestJS",
+        "logoUrl": "assets/images/logos/learning_courses/sl.png",
+        "location": "online SoloLearn",
+        "certificate": "https://www.sololearn.com/Certificate/1092-8747457/jpg",
+        "tags": ["Web Development", "Angular", "TypeScript", "NestJS"]
+    },
+    {
+        "eventName": "course",
+        "endDate": "2020-04-06",
+        "description": "This FREE course will teach you how to design a web page using HTML. Complete a series of hands-on exercises and practice while writing real HTML code.",
+        "enterprise": "SoloLearn",
+        "role": "HTML",
+        "logoUrl": "assets/images/logos/learning_courses/sl.png",
+        "location": "online SoloLearn",
+        "certificate": "https://www.sololearn.com/Certificate/1014-8747457/jpg",
+        "tags": ["Web Development", "HTML"]
+    },
+    {
+        "eventName": "course",
+        "endDate": "2020-04-01",
+        "description": "Course by Joe Eames. This course will teach you a high level view of Angular, to assist you in either understanding Angular better for your own development, or learning when to use Angular vs. other front end frameworks.",
+        "enterprise": "Pluralsight",
+        "role": "Angular: The Big Picture",
+        "logoUrl": "assets/images/logos/learning_courses/ps.png",
+        "location": "online Pluralsight",
+        "certificate": "https://www.pluralsight.com/courses/ng-big-picture",
+        "tags": ["Web Development", "Angular", "TypeScript"]
     },
     {
         "eventName": "course",
