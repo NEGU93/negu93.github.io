@@ -173,7 +173,7 @@
         "description": "Online course. A practical approach to deep learning for software developers",
         "enterprise": "Udacity / TensorFlow",
         "role": "Intro to TensorFlow for Deep Learning by TensorFlow",
-        "logoUrl": "assets/images/logos/enterprises/udacity.png",
+        "logoUrl": "assets/images/logos/learning_courses/udacity.png",
         "location": "online Udacity",
         "certificate": "https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187",
         "tags": ["Machine Learning", "TensorFlow"]
@@ -206,7 +206,7 @@
         "description": "Learn Python, one of today's most in-demand programming languages on-the-go! Practice writing Python code, collect points, & show off your skills now!",
         "enterprise": "SoloLearn",
         "role": "Python Core",
-        "logoUrl": "assets/images/logos/learning_courses/sl.png",
+        "logoUrl": "assets/images/logos/learning_courses/slp.png",
         "location": "online SoloLearn",
         "certificate": "https://www.sololearn.com/certificates/course/en/8747457/1073/landscape/png",
         "tags": ["Python"]
