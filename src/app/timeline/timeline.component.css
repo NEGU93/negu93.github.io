@@ -141,7 +141,7 @@ header {
   display: block;
   color: black;
   /*width: 600px;*/
-  height: 600px;
+  /* height: 600px; */
   position: relative;
   left: 53%;
   top: 55%;
