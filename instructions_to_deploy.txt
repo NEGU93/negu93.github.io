@@ -9,6 +9,10 @@ Check eveything is working correctly (ng serve --open) then checkout into gh-pag
 New reposotory:
 
 1. Clone repository
-2. Install angular with `npm update` (and if it does not work, `npm install`)
-3. 
+2. Install angular with `npm install`
+3. Create the new branch gh-pages (yes, create it)
+4. Push the new branch with `git push origin gh-pages --force`
+5. npm install -g angular-cli-ghpages
+
+Then continue as usual.
 
