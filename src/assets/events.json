@@ -169,11 +169,22 @@
     },
     {
         "eventName": "course",
+        "endDate": "2020-04-01",
+        "description": "Course by Joe Eames. This course will teach you a high level view of Angular, to assist you in either understanding Angular better for your own development, or learning when to use Angular vs. other front end frameworks.",
+        "enterprise": "Pluralsight",
+        "role": "Angular: The Big Picture",
+        "logoUrl": "assets/images/logos/learning_courses/ps.png",
+        "location": "online Pluralsight",
+        "certificate": "https://www.pluralsight.com/courses/ng-big-picture",
+        "tags": ["Web Development", "Angular", "TypeScript"]
+    },
+    {
+        "eventName": "course",
         "endDate": "2021-08-03",
         "description": "Online course. A practical approach to deep learning for software developers",
         "enterprise": "Udacity / TensorFlow",
         "role": "Intro to TensorFlow for Deep Learning by TensorFlow",
-        "logoUrl": "assets/images/logos/learning_courses/udacity.png",
+        "logoUrl": "assets/images/logos/learning_courses/udacity-tf.png",
         "location": "online Udacity",
         "certificate": "https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187",
         "tags": ["Machine Learning", "TensorFlow"]
@@ -202,25 +213,14 @@
     },
     {
         "eventName": "course",
-        "endDate": "2021-08-03",
+        "endDate": "2018-11-19",
         "description": "Learn Python, one of today's most in-demand programming languages on-the-go! Practice writing Python code, collect points, & show off your skills now!",
         "enterprise": "SoloLearn",
         "role": "Python Core",
-        "logoUrl": "assets/images/logos/learning_courses/slp.png",
+        "logoUrl": "assets/images/logos/learning_courses/sl.png",
         "location": "online SoloLearn",
         "certificate": "https://www.sololearn.com/certificates/course/en/8747457/1073/landscape/png",
         "tags": ["Python"]
-    },
-    {
-        "eventName": "course",
-        "endDate": "2020-04-01",
-        "description": "Course by Joe Eames. This course will teach you a high level view of Angular, to assist you in either understanding Angular better for your own development, or learning when to use Angular vs. other front end frameworks.",
-        "enterprise": "Pluralsight",
-        "role": "Angular: The Big Picture",
-        "logoUrl": "assets/images/logos/learning_courses/ps.png",
-        "location": "online Pluralsight",
-        "certificate": "https://www.pluralsight.com/courses/ng-big-picture",
-        "tags": ["Web Development", "Angular", "TypeScript"]
     },
     {
         "eventName": "course",
