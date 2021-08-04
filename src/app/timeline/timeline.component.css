@@ -141,7 +141,7 @@ header {
   display: block;
   color: black;
   /*width: 600px;*/
-  /* height: 600px; */
+  height: 600px;
   position: relative;
   left: 53%;
   top: 55%;
@@ -747,6 +747,7 @@ Sidebar
   font-size: 20px;
   color: white;
   background-color: #34495e;
+  cursor: pointer;
   /*padding-left: 20px;*/
   box-sizing: border-box;
   border-top: 1px solid rgba(255, 255, 255, .1);
