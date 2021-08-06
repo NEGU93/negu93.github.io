@@ -92,7 +92,7 @@ header {
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
-    margin-top: 3em;
+    margin-top: 0em;
     /*margin-bottom: 3em;*/
   }
   #cd-timeline::before {
@@ -143,7 +143,7 @@ header {
   display: block;
   color: black;
   /*width: 600px;*/
-  height: 600px;
+  /* height: 600px; */
   position: relative;
   left: 53%;
   top: 55%;
@@ -683,6 +683,7 @@ a{
 
 #type_checkboxes {
   display: none;
+  padding-top: 22px;
   /* border: 1px #b1b1b1 solid; */
   padding-left: 10px;
   padding-bottom: 10px;
