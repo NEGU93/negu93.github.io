@@ -119,6 +119,7 @@ footer {
     background-color: #5A6B7D;
     padding: 2rem 0;
     position: relative;
+    bottom: 0;
 }
 
 .up {
