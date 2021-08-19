@@ -256,7 +256,7 @@ header {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #5A6B7D;
+  background: #6e8eaf;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #000000;
@@ -325,7 +325,7 @@ header {
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid #5A6B7D;
+  border-right: 7px solid #6e8eaf;
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -372,7 +372,7 @@ header {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: #5A6B7D;
+    border-left-color: #6e8eaf;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -397,7 +397,7 @@ header {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: #5A6B7D;
+    border-right-color: #6e8eaf;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
@@ -718,7 +718,7 @@ a{
 }
 
 #type_checkboxes label:hover {
-  background-color: #b1b1b1;
+  background-color: #5A6B7D;
 }
 
 .check_item {
@@ -748,7 +748,7 @@ a{
   color: #ffffff;
   font-size: 1rem;
   letter-spacing: 1px;
-  background-color: #5A6B7D;
+  background-color: #6e8eaf;
   outline: none;
   cursor: pointer;
 }
@@ -905,13 +905,15 @@ ul.ks-cboxtags li input[type="checkbox"] {
   .sidebar{
     display: none;
   }
+
+  #cd-timeline {
+    margin-top: 150px;
+    /*scroll-snap-type: y mandatory; */
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  #cd-timeline {
-    margin-top: 150px;
-    scroll-snap-type: y mandatory; 
-  }
+  
 
   .cd-timeline-content {
     margin-left: 0px;
@@ -925,7 +927,7 @@ ul.ks-cboxtags li input[type="checkbox"] {
     display: none;
   }
 
-  .cd-timeline-block {
+  /* .cd-timeline-block {
     scroll-snap-align: center;
-  }
+  } */
 }

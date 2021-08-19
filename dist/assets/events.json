@@ -300,5 +300,14 @@
         "role": "IEEE Membership",
         "logoUrl": "assets/images/logos/enterprises/ieee.png",
         "location": "Region 9 (Latin America)"
+    },
+    {
+        "eventName": "misc",
+        "endDate": "2021-07",
+        "role": "Machine Learning - WAYR (What Are You Reading) - Week 116",
+        "enterprise": "Reddit",
+        "logoUrl": "assets/images/logos/1200px-Reddit_logo_new.png",
+        "description": "Machine Learning WAYR is a place to share machine learning research papers, journals, and articles that you're reading this week. Each week the choose the most upvoted paper. Mine was the most upvoted paper of 116.",
+        "certificate": "https://www.reddit.com/r/MachineLearning/comments/odrudt/d_machine_learning_wayr_what_are_you_reading_week/?utm_medium=android_app&utm_source=share"
     }
 ]
