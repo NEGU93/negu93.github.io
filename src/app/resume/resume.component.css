@@ -27,7 +27,8 @@ h2 {
 }
 
 .full-link {
-    width: 300px;
+    width: min(200px, 40vw);
+    margin: 5vw 5vw 5vw 0;
 }
 
 

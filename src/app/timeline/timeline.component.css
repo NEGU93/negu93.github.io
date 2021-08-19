@@ -907,7 +907,7 @@ ul.ks-cboxtags li input[type="checkbox"] {
   }
 
   #cd-timeline {
-    margin-top: 150px;
+    margin-top: 20vw;
     /*scroll-snap-type: y mandatory; */
   }
 }

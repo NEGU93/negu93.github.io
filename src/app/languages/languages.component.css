@@ -27,6 +27,7 @@ h1 {
     background-color: #b1b1b1;
     outline: none;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 .language-category button.active{

@@ -27,7 +27,8 @@ h1 {
 }
 
 .about-me-info p {
-    font-size: 1.3rem;
+    font-size: min(1.3rem, 4vw);
+    text-align: justify;
 }
 
 .about-me-info p:nth-child(2),
