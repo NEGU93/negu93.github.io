@@ -57,7 +57,7 @@
       </ul>
     </div>
   </div>
-  <section id="cd-timeline" class="cd-container">
+  <div id="cd-timeline" class="cd-container">
     <!--<cdk-virtual-scroll-viewport itemSize="400">-->
       <div class="cd-timeline-block" *ngFor='let event of filteredEvents; let i = index' (appear)="onAppear(i)"> <!--[@fadeInOut]-->
         <span class="container-all" *ngIf="hasAppeared[i]">
@@ -91,5 +91,5 @@
           </div>
         </span>
       </div>
-  </section>
+  </div>
 </div>
