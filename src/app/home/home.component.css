@@ -1,4 +1,5 @@
 * {
+    scroll-snap-type: y proximity;
     background-color: #b1b1b1;
     display: flex;
     flex: 0 0 100%;
@@ -6,6 +7,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.container {
+    scroll-snap-align: center;
 }
 
 #home{
@@ -40,7 +45,7 @@
 #languages, #resume, #about {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 

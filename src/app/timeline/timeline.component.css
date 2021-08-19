@@ -27,6 +27,8 @@ html * {
   font-family: "Droid Serif", serif!important;
   color: #7f8c97;
   /*background: #f2f2f2!important;*/
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -90,7 +92,7 @@ header {
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
-    margin-top: 3em;
+    margin-top: 0em;
     /*margin-bottom: 3em;*/
   }
   #cd-timeline::before {
@@ -149,10 +151,10 @@ header {
   margin-top: -12px;
 }
 .cd-timeline-img.experience {
-  background: #2E4057;
+  background: #DABECA;
 }
 .cd-timeline-img.education {
-  background: #9C3848;
+  background: #B48B7D;
 }
 .cd-timeline-img.teaching {
   background: #7FC6A4;
@@ -345,6 +347,17 @@ header {
     font-size: 1.5rem;
   }
 }
+
+.fas fa-angle-right{
+  transform: rotate(0deg);
+  transition: transform 1s linear;
+}
+
+.fas fa-angle-left{
+  transform: rotate(180deg);
+  transition: transform 1s linear;
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
@@ -681,14 +694,27 @@ a{
 
 #type_checkboxes {
   display: none;
-  border: 1px #b1b1b1 solid;
+  padding-top: 22px;
+  /* border: 1px #b1b1b1 solid; */
   padding-left: 10px;
   padding-bottom: 10px;
+  flex-flow: column wrap;
+  height: 200px;
 }
 
 #type_checkboxes label {
   color: white;
-  display: inline-block;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 8px;
+  cursor: pointer;
+  /* margin: 10px; */
+  /* display: inline-block; */
+  /* height: 200px; */
+}
+
+#type_checkboxes label i {
+  margin-right: 15px;
 }
 
 #type_checkboxes label:hover {
@@ -697,10 +723,13 @@ a{
 
 .check_item {
   flex-wrap: nowrap;
+  margin: 15px;
 }
 
 #type_checkboxes input {
   margin: .4rem;
+  position: absolute;
+  opacity: 0;
 }
 
 .tags {
@@ -732,21 +761,35 @@ Sidebar
 -------------------------------- */
 
 .sidebar{
-  position: fixed;
+  /* position: fixed; */
   left: 0;
-  width: 250px;
-  height: 100%;
+  width: 100%;
+  height: 200px;
   background: #34495e;
+  display: grid;
+  grid-template-columns: 300px auto 200px;
+  /* grid-template-rows: 25% 100px auto; */ 
+}
+
+.sidebar ul #type_checkboxes, #tag_checkboxes{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .sidebar ul button{
-  display: block;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
   height: 100%;
   width: 100%;
   line-height: 65px;
   font-size: 20px;
   color: white;
   background-color: #34495e;
+  cursor: pointer;
   /*padding-left: 20px;*/
   box-sizing: border-box;
   border-top: 1px solid rgba(255, 255, 255, .1);
@@ -760,7 +803,6 @@ ul li:hover button{
 
 .sidebar ul button i {
   margin-left: 20px;
-
 }
 
 /*
@@ -768,7 +810,8 @@ Tags
 */
 
 .container {
-  max-width: 640px;
+  max-height: 50px; 
+  margin: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 13px;
 }
@@ -852,4 +895,37 @@ ul.ks-cboxtags li input[type="checkbox"] {
   display: none;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+
+
+/* mobile view */
+
+@media only screen and (max-width: 1070px) {
+  .sidebar{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #cd-timeline {
+    margin-top: 150px;
+    scroll-snap-type: y mandatory; 
+  }
+
+  .cd-timeline-content {
+    margin-left: 0px;
+  }
+
+  .cd-timeline-img {
+    display: none;
+  }
+
+  #cd-timeline::before {
+    display: none;
+  }
+
+  .cd-timeline-block {
+    scroll-snap-align: center;
+  }
 }

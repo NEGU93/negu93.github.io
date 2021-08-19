@@ -141,12 +141,15 @@ export class TimelineComponent implements OnInit  {
   showCheckboxes() : void {
     var checkboxes = document.getElementById("type_checkboxes");
     if (!this.expanded) {
-      checkboxes.style.display = "block";
+      checkboxes.style.display = "flex";
       this.expanded = true;
     } else {
       checkboxes.style.display = "none";
       this.expanded = false;
     }
+    checkboxes = document.getElementById("tag_checkboxes");
+    checkboxes.style.display = "none";
+    this.tagExpanded = false;
   }
 
   showTags() : void {
@@ -158,6 +161,9 @@ export class TimelineComponent implements OnInit  {
       checkboxes.style.display = "none";
       this.tagExpanded = false;
     }
+    checkboxes = document.getElementById("type_checkboxes");
+    checkboxes.style.display = "none";
+    this.expanded = false;
   }
 
   onAppear(variable : number){
