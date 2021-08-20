@@ -53,7 +53,7 @@ import { Animations } from './animation';
       { path: 'computer', component: ComputerComponent},
       { path: '', redirectTo: 'home', pathMatch: 'full'},
       { path: '**', redirectTo: 'home', pathMatch: 'full'}
-    ])  //, { enableTracing: true }
+    ], {scrollPositionRestoration: 'enabled'})  //, { enableTracing: true }
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -55,9 +55,11 @@ export class TimelineComponent implements OnInit  {
   ngOnInit(): void {
     //AOS.init();
     let id : string = this.route.snapshot.paramMap.get('id');
+    let start_value = false;
     if (id in this.listFilter) {
       this.selectAll = false;   // This will set all to false automatically.
       this.updateSelectAll();
+      start_value = true;
       switch(id) {
         case "experience": 
           this.listFilter.experience = true;
@@ -95,7 +97,7 @@ export class TimelineComponent implements OnInit  {
       error: err => this.errorMessage = err
     });   
     for (var i = 1; i<this.hasAppeared.length;i++) {
-      this.hasAppeared[i] = false;
+      this.hasAppeared[i] = start_value;
     }
     this.hasAppeared[0] = true;
   }

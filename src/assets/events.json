@@ -11,6 +11,16 @@
         "tags": ["Machine Learning"]
     },
     {
+        "eventName": "publication",
+        "endDate": "2021-10",
+        "role": "Conference Publication",
+        "enterprise": "IEEE MLSP 2021",    	
+        "description": "J Agustin BARRACHINA et al. 'About the equivalence between complex-valued and real-valued fully connected neural networks - application to PolInSAR images'",
+        "logoUrl": "assets/images/logos/publish/ieee-sp.png",
+        "location": "Queensland, Australia",
+        "tags": ["Machine Learning"]
+    },
+    {
         "eventName": "education",
         "startDate": "2012-01",
         "endDate": "2018-12",

@@ -18,6 +18,7 @@
 	flex-wrap: wrap;
 	flex: 0 0 100%;
 	background-color: #5A6B7D;
+    /* background: linear-gradient(90deg, #2c3531, #116466); */
 	padding: 0 100px 0 100px;
 	align-items: center;
 	flex-direction: row;
@@ -39,6 +40,7 @@
 
 #about {
     background-color: #5A6B7D;
+    /* background: linear-gradient(90deg, #2c3531, #116466); */
     height: calc(100vh);
 }
 
@@ -48,6 +50,10 @@
     justify-content: center;
     align-items: center;
 }
+
+/* #resume, #languages {
+    background: linear-gradient(270deg, #116466, #D1E8E2);
+} */
 
 #resume, #about {
     text-align: center;

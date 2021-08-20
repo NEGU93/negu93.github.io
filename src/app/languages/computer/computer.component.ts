@@ -36,7 +36,7 @@ export class ComputerComponent implements OnInit {
   }
 
   loadAnimations() {
-    // console.log("Load animations");
+    //console.log("Load animations");
     if (!this.mobile) {
       this.loadAPI = new Promise(resolve => {
         this.loadScript();
@@ -75,7 +75,7 @@ export class ComputerComponent implements OnInit {
   }
 
   loadScript() : void {
-    // console.log("load script");
+    //console.log("load script");
     let node = document.createElement("script");
     node.src = this.url;
     node.type = "text/javascript";
