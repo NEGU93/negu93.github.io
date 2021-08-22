@@ -56,17 +56,17 @@ height: 260px;
   top: -70px;
   left: 0;
   font-size: 3.0rem;
-  color: #333;
+  color: #c5c6c7;
 }
 
 .code-display h1 {
-color: #333;
+color: #c5c6c7;
 }
 
 .code-description {
 width: 100%;
 height: 100%;
-color: #333;
+color: #c5c6c7;
 }
 
 div[class$="-desc"] {
@@ -156,7 +156,7 @@ background-position: right center;
 
 a {
   text-decoration: none;
-  color: #34495e;
+  color: #45a29e;
 }
 
 .hex-master-wrap {
@@ -178,7 +178,7 @@ border-left: 3px solid;
 border-right: 3px solid;
 border-radius: 8px;
 z-index: 2;
-border-color: #34495e;
+border-color: #45a29e;
 -webkit-backface-visibility: hidden;
 backface-visibility: hidden;
 }
@@ -255,7 +255,7 @@ transform: rotate(120deg);
   margin: auto;
   width: 100%;
   height: 58px;
-  color: #f6f6f6;
+  color: #c5c6c7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,13 +387,17 @@ transform: rotate(60deg);
 .skillbar h1 {
   font-size: 20px;
   text-align: left;
-  color: #34495e;
+  color: #45a29e;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 
 .skillbar p {
   text-align: left;
+}
+
+p {
+  color: #c5c6c7;
 }
 /*.mobile-view {
   display: none;

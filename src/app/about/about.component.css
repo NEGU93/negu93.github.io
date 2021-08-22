@@ -15,8 +15,8 @@ h1 {
 
 .about-me-info {
     max-width: 900px;
-    background-color: #b1b1b1;
-    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    background-color: #45a29e;
+    box-shadow: 0 0 1.2rem rgba(102,252,241,.5);
     padding: 50px;
     position: relative;
     /*top: -70px;*/
@@ -29,6 +29,7 @@ h1 {
 .about-me-info p {
     font-size: min(1.3rem, 4vw);
     text-align: justify;
+    color: #ffffff;
 }
 
 .about-me-info p:nth-child(2),

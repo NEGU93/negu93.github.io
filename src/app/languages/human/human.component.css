@@ -1,5 +1,5 @@
 body {
-  background-color: #22313F;
+  background-color: #66fcf1;
 }
 
 .skill-skill {
@@ -18,11 +18,12 @@ body {
 .skillbar h1 {
   font-size: 20px;
   text-align: left;
-  color: #34495e;
+  color: #66fcf1;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 
 .skillbar p {
   text-align: left;
+  color: #c5c6c7;
 }

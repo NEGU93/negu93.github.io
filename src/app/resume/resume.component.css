@@ -1,13 +1,13 @@
 h1 {
     margin-top: 1rem;
-    color: #34495e;
+    color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
     /*text-transform: uppercase;*/
 }
 
 h2 {
-    color: #34495e;
+    color: #66fcf1;
     font-weight: 100;
     margin-bottom: 1rem;
 }
@@ -35,13 +35,13 @@ h2 {
 .resume-buttons button {
     /*width: 300px;*/
     text-transform: capitalize;
-    border: 3px solid #34495e;
+    border: 3px solid #66fcf1;
     padding: 15px 30px;
     border-radius: 50px;
-    color: #34495e;
+    color: #66fcf1;
     font-size: 1.1rem;
     letter-spacing: 1px;
-    background-color: #b1b1b1;
+    background-color: transparent;
     outline: none;
     cursor: pointer;
 }
@@ -59,11 +59,7 @@ h2 {
 }
 
 .resume-buttons button:hover {
-    color: #b1b1b1;
-}
-
-.resume-buttons button:hover {
-    background-color: #34495e;
+    background-color: #45a29c;
     transition: .5s;
 }
 
@@ -87,7 +83,9 @@ h2 {
     margin-top: 2%;
 }
 
-
+.cv-download .language p {
+    color: #c5c6c7;
+}
 
 
 
@@ -98,9 +96,9 @@ h2 {
     display: inline-flex;
     height: 40px;
     width: 150px;
-    border: 2px solid #34495e;
+    border: 2px solid #66fcf1;
     margin: 20px 20px 20px 20px;
-    color: #34495e;
+    color: #66fcf1;
     text-transform: uppercase;
     text-decoration: none;
     font-size: .8em;
@@ -113,7 +111,7 @@ h2 {
 }
   
 #download-cv span {
-    color: #34495e;
+    color: #66fcf1;
     text-decoration: none;
     letter-spacing: 1px;
 }
@@ -138,7 +136,7 @@ h2 {
 #down-arrow {
     width: 100%;
     height: 100%;
-    background: #34495e;
+    background: #66fcf1;
     left: -200px;
     position: absolute;
     padding: 0;
@@ -154,7 +152,7 @@ h2 {
 }
 
 #download-cv i {
-    color: #b1b1b1;
+    color: #1f2833;
 }
 
 #download-cv:hover #down-arrow {

@@ -57,11 +57,11 @@ export class HumanComponent implements OnInit {
 
   
       var skillHtml = "<div class='skillbar'>" +
-        "<h1 style='display: none; margin-bottom: .2em; margin-top: 2rem; color: #34495e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 100;'>" + caption + "</h1>" +
-        "<div class='skillbg' style='display: none; max-width: 500px; height: " + heightBar + "; background-color: #BFBFBF;'>" +
+        "<h1 style='display: none; margin-bottom: .2em; margin-top: 2rem; color: #45a29e; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 100;'>" + caption + "</h1>" +
+        "<div class='skillbg' style='display: none; width: 50vw; min-width: 250px; height: " + heightBar + "; background-color: #c5c6c7;'>" +
         "<div class='skill-skill-" + idNr + "' style='background-color: " + color + "; height: " + heightBar + ";' />" +
         "</div>" +
-        "<p style='display: none; margin-bottom: 3rem;'>" + skillLevel + " | " + text + "</p>" +
+        "<p style='display: none; margin-bottom: 3rem; color: #c5c6c7'>" + skillLevel + " | " + text + "</p>" +
         "</div>";
       setTimeout(function() {
         $(".skill-skill-" + idNr).css({

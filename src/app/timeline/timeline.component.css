@@ -88,7 +88,7 @@ header {
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #34495e;
+  background: #0b0c10;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -137,7 +137,7 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #34495e, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #0b0c10, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img i {
   display: block;
@@ -256,7 +256,7 @@ header {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #6e8eaf;
+  background: #45a29e;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #000000;
@@ -325,7 +325,7 @@ header {
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid #6e8eaf;
+  border-right: 7px solid #45a29e;
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -372,7 +372,7 @@ header {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: #6e8eaf;
+    border-left-color: #45a29e;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -397,7 +397,7 @@ header {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: #6e8eaf;
+    border-right-color: #45a29e;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
@@ -748,7 +748,7 @@ a{
   color: #ffffff;
   font-size: 1rem;
   letter-spacing: 1px;
-  background-color: #6e8eaf;
+  background-color: transparent;
   outline: none;
   cursor: pointer;
 }
@@ -765,7 +765,7 @@ Sidebar
   left: 0;
   width: 100%;
   height: 200px;
-  background: #34495e;
+  background: #0B0C10;
   display: grid;
   grid-template-columns: 300px auto 200px;
   /* grid-template-rows: 25% 100px auto; */ 
@@ -788,7 +788,7 @@ Sidebar
   line-height: 65px;
   font-size: 20px;
   color: white;
-  background-color: #34495e;
+  background-color: transparent;
   cursor: pointer;
   /*padding-left: 20px;*/
   box-sizing: border-box;
@@ -798,7 +798,7 @@ Sidebar
 
 ul li:hover button{
   padding-left: 20px;
-  background-color: #5A6B7D;
+  background-color: #1f2833;
 }
 
 .sidebar ul button i {
@@ -874,8 +874,8 @@ ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:checked + label {
-  border: 2px solid orangered;
-  background-color: orangered;
+  border: 2px solid #45a29e;
+  background-color: #45a29e;
   color: #fff;
   transition: all .2s;
 }
