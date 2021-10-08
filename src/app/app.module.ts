@@ -47,11 +47,10 @@ import { Animations } from './animation';
     BrowserAnimationsModule,
     ScrollingModule,
     RouterModule.forRoot([
-      { path: 'home', component: HomeComponent},
+      { path: '', component: HomeComponent},
       { path: 'timeline', component: TimelineComponent},
       { path: 'timeline/:id', component: TimelineComponent},
       { path: 'computer', component: ComputerComponent},
-      { path: '', redirectTo: 'home', pathMatch: 'full'},
       { path: '**', redirectTo: 'home', pathMatch: 'full'}
     ], {scrollPositionRestoration: 'enabled'})  //, { enableTracing: true }
   ],
