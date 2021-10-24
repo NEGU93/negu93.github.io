@@ -273,9 +273,9 @@
     },
     {
         "eventName": "competition",
-        "endDate": "2017-10-14",
+        "endDate": "2021-10-24",
         "startDate": "2018-10-18",
-        "description": "2017 : IEEEXtreme 11.0 Position : 391 over 3350 (percentile 88) 2015 : IEEEXtreme 9.0 Position : 275 over 2035 (percentile 86) 2014 : IEEEXtreme 8.0 Position : 536 over 1853 (percentile 71)",
+        "description": "2021 : IEEEXtreme 15.0 Position : 313 over 5561 (percentile 94) 2017 : IEEEXtreme 11.0 Position : 391 over 3350 (percentile 88) 2015 : IEEEXtreme 9.0 Position : 275 over 2035 (percentile 86) 2014 : IEEEXtreme 8.0 Position : 536 over 1853 (percentile 71)",
         "enterprise": "Instituto Tecnológico de Buenos Aires (ITBA)",
         "role": "IEEEXtreme 24-hour Programming Competition",
         "logoUrl": "assets/images/logos/enterprises/IEEEXtreme.png",
