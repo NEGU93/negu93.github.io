@@ -17,6 +17,7 @@
         "enterprise": "IEEE MLSP 2021",    	
         "description": "Reviewer score ranked top 15% among all submissions. J Agustin BARRACHINA et al. 'About the equivalence between complex-valued and real-valued fully connected neural networks - application to PolInSAR images'.",
         "logoUrl": "assets/images/logos/publish/ieee-sp.png",
+        "certificate": "https://ieeexplore.ieee.org/document/9596542",
         "location": "Queensland, Australia",
         "tags": ["Machine Learning"]
     },
