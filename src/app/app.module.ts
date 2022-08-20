@@ -20,7 +20,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 
-import {AppearDirective} from './appear';
+import { AppearDirective } from './appear';
 import { Animations } from './animation';
 
 @NgModule({
@@ -37,24 +37,27 @@ import { Animations } from './animation';
     ContactComponent,
     ResumeComponent,
     AboutComponent,
-    AppearDirective
+    AppearDirective,
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
     ScrollingModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent},
-      { path: 'timeline', component: TimelineComponent},
-      { path: 'timeline/:id', component: TimelineComponent},
-      { path: 'computer', component: ComputerComponent},
-      { path: '**', redirectTo: 'home', pathMatch: 'full'}
-    ], {scrollPositionRestoration: 'enabled'})  //, { enableTracing: true }
+    RouterModule.forRoot(
+      [
+        { path: 'home', component: HomeComponent },
+        { path: 'timeline', component: TimelineComponent },
+        { path: 'timeline/:id', component: TimelineComponent },
+        { path: 'computer', component: ComputerComponent },
+        { path: '**', redirectTo: 'home', pathMatch: 'full' },
+      ],
+      { scrollPositionRestoration: 'enabled' }
+    ), //, { enableTracing: true }
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
