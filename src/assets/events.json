@@ -12,6 +12,51 @@
     },
     {
         "eventName": "publication",
+        "endDate": "2022-07-22",
+        "startDate": "2022-07-17",
+        "role": "Conference Publication",
+        "enterprise": "IEEE IGARSS 2022",    	
+        "description": "J Agustin BARRACHINA et al. 'Complex-Valued Neural Networks for Polarimetric SAR segmentation using Pauli representation'",
+        "logoUrl": "assets/images/logos/publish/IG22_WebHeader.png",
+        "certificate": "https://www.igarss2022.org/certificate_attendance.php?a=08342F235E9B47D5ACC735F8888E52DB33",
+        "location": "Kuala Lumpur, Malaysia",
+        "tags": ["Machine Learning"]
+    },
+    {
+        "eventName": "publication",
+        "endDate": "2022-10-19",
+        "startDate": "2022-10-16",
+        "role": "Conference Publication",
+        "enterprise": "IEEE ICIP 2022",    	
+        "description": "J Agustin BARRACHINA et al. 'Real- and Complex-Valued Neural Networks for SAR image segmentation through different polarimetric representations'",
+        "logoUrl": "assets/images/logos/publish/Test1_Bandeauv2-4.png",
+        "location": "Bordeaux, France",
+        "tags": ["Machine Learning"]
+    },
+    {
+        "eventName": "publication",
+        "endDate": "2022-09-09",
+        "startDate": "2022-09-06",
+        "role": "Conference Publication",
+        "enterprise": "Gretsi 2022",    	
+        "description": "J Agustin BARRACHINA et al. 'Merits of Complex-Valued Neural Networks for PolSAR image segmentation'",
+        "logoUrl": "assets/images/logos/publish/logo-light-300x258.png",
+        "location": "Nancy, France",
+        "tags": ["Machine Learning"]
+    },
+    {
+        "eventName": "publication",
+        "endDate": "2022-07-28",
+        "role": "Journal Publication",
+        "enterprise": "Springer: Journal of Signal Processing Systems",    	
+        "description": "J Agustin BARRACHINA et al. 'Comparison Between Equivalent Architectures of Complex-valued and Real-valued Neural Networks - Application on Polarimetric SAR Image Segmentation'",
+        "logoUrl": "assets/images/logos/publish/springer.png",
+        "certificate": "https://link.springer.com/article/10.1007/s11265-022-01793-0",
+        "location": "Springer US",
+        "tags": ["Machine Learning"]
+    },
+    {
+        "eventName": "publication",
         "endDate": "2021-10",
         "role": "Conference Publication",
         "enterprise": "IEEE MLSP 2021",    	
@@ -180,6 +225,18 @@
     },
     {
         "eventName": "course",
+        "endDate": "2022-07-29",
+        "startDate": "2022-07-24",
+        "description": "LxMLS: 12th Lisbon Machine Learning School",
+        "enterprise": "Instituto Superior Técnico",
+        "role": "Machine Learning",
+        "logoUrl": "assets/images/logos/learning_courses/lxmls-logo-1.png",
+        "location": "Lisbon, Portugal",
+        "certificate": "assets/pdf/lxmls.pdf",
+        "tags": ["Machine Learning", "Python", "PyTorch"]
+    },
+    {
+        "eventName": "course",
         "endDate": "2020-04-01",
         "description": "Course by Joe Eames. This course will teach you a high level view of Angular, to assist you in either understanding Angular better for your own development, or learning when to use Angular vs. other front end frameworks.",
         "enterprise": "Pluralsight",
@@ -262,6 +319,16 @@
         "role": "Hackathon J.P. Morgan",
         "logoUrl": "assets/images/logos/enterprises/JP-Morgan-Logo.png",
         "location": "Buenos Aires, Argentina"
+    },
+    {
+        "eventName": "competition",
+        "endDate": "2022-07-19",
+        "description": "IEEE GRSS Excellence in Technical Communication Student Prize Award",
+        "enterprise": "University of Queensland",
+        "role": "3MT Prize Award Finalist",
+        "logoUrl": "assets/images/logos/publish/IG22_WebHeader.png",
+        "certificate": "https://www.youtube.com/watch?v=Zws7TBNHn9A&ab_channel=AgustinBarrachina",
+        "location": "Kuala Lumpur, Malaysia"
     },
     {
         "eventName": "competition",
