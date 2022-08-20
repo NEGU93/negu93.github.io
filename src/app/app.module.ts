@@ -22,6 +22,8 @@ import { AboutComponent } from './about/about.component';
 
 import {AppearDirective} from './appear';
 import { Animations } from './animation';
+import { PhdComponent } from './phd/phd.component';
+import { GithubComponent } from './phd/github/github.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { Animations } from './animation';
     ContactComponent,
     ResumeComponent,
     AboutComponent,
-    AppearDirective
+    AppearDirective,
+    PhdComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule, 
@@ -51,6 +55,7 @@ import { Animations } from './animation';
       { path: 'timeline', component: TimelineComponent},
       { path: 'timeline/:id', component: TimelineComponent},
       { path: 'computer', component: ComputerComponent},
+      { path: 'phd', component: PhdComponent},
       { path: '**', redirectTo: 'home', pathMatch: 'full'}
     ], {scrollPositionRestoration: 'enabled'})  //, { enableTracing: true }
   ],

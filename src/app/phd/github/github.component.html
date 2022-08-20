@@ -1,0 +1,4 @@
+<p>github works!</p>
+<ul *ngIf="githubRepoStatus">
+    <li *ngFor='let item of infoKeys | keyvalue'>{{item.key}}: {{githubRepoStatus[item.value['key']]}}</li>
+</ul>
