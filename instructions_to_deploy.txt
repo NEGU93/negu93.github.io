@@ -10,9 +10,13 @@ New reposotory:
 
 1. Clone repository
 2. Install angular with `npm install`
+
+
+For gh-pages:
 3. Create the new branch gh-pages (yes, create it)
 4. Push the new branch with `git push origin gh-pages --force`
 5. npm install -g angular-cli-ghpages
+
 
 Then continue as usual.
 
