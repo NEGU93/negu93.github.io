@@ -4,7 +4,7 @@ import { Animations } from '../animation';
 @Component({
   selector: 'app-me',
   templateUrl: './me.component.html',
-  styleUrls: ['./me.component.css'],
+  styleUrls: ['./me.component.scss'],
   animations: [
     Animations.Triggers
   ]

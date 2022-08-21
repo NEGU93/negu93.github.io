@@ -20,7 +20,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 
-import {AppearDirective} from './appear';
+import { AppearDirective } from './appear';
 import { Animations } from './animation';
 import { PhdComponent } from './phd/phd.component';
 import { GithubComponent } from './phd/github/github.component';
@@ -40,16 +40,20 @@ import { GithubComponent } from './phd/github/github.component';
     ResumeComponent,
     AboutComponent,
     AppearDirective,
+<<<<<<< HEAD
     PhdComponent,
     GithubComponent
+=======
+>>>>>>> master
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
     ScrollingModule,
+<<<<<<< HEAD
     RouterModule.forRoot([
       { path: '', component: HomeComponent},
       { path: 'timeline', component: TimelineComponent},
@@ -58,8 +62,20 @@ import { GithubComponent } from './phd/github/github.component';
       { path: 'phd', component: PhdComponent},
       { path: '**', redirectTo: 'home', pathMatch: 'full'}
     ], {scrollPositionRestoration: 'enabled'})  //, { enableTracing: true }
+=======
+    RouterModule.forRoot(
+      [
+        { path: 'home', component: HomeComponent },
+        { path: 'timeline', component: TimelineComponent },
+        { path: 'timeline/:id', component: TimelineComponent },
+        { path: 'computer', component: ComputerComponent },
+        { path: '**', redirectTo: 'home', pathMatch: 'full' },
+      ],
+      { scrollPositionRestoration: 'enabled' }
+    ), //, { enableTracing: true }
+>>>>>>> master
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

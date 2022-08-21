@@ -3,7 +3,7 @@ https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-p
 Check eveything is working correctly (ng serve --open) then checkout into gh-pages
 
 1. git merge master  (To add all new changes to that branch)
-2. ng build --prod --base-href "https://negu93.github.io/agustinbarrachina/"
+2. ng build --prod --base-href "https://negu93.github.io/"
 3. ngh
 
 New reposotory:
