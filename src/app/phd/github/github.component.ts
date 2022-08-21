@@ -6,14 +6,14 @@ import { analyzeAndValidateNgModules } from '@angular/compiler';
 @Component({
   selector: 'app-github',
   templateUrl: './github.component.html',
-  styleUrls: ['./github.component.css']
+  styleUrls: ['./github.component.scss']
 })
 export class GithubComponent implements OnInit {
   public githubRepoStatus: any;
   public infoKeys = {
-    "stars": {"key": 'stargazers_count'} ,
-    "watchers": {"key": 'subscribers_count'}, 
-    "forks": {"key": 'forks'}
+    "stars": {"key": 'stargazers_count',  "logo": "fas fa-star"},
+    "watchers": {"key": 'subscribers_count', "logo": "fas fa-eye"}, 
+    "forks": {"key": 'forks', "logo": "fa fa-code-fork"}
   };
 
   constructor(private http: HttpClient) { }
