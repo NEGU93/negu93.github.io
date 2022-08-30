@@ -229,11 +229,23 @@
         "startDate": "2022-07-24",
         "description": "LxMLS: 12th Lisbon Machine Learning School",
         "enterprise": "Instituto Superior Técnico",
-        "role": "Machine Learning",
+        "role": "Summer School Attendee",
         "logoUrl": "assets/images/logos/learning_courses/lxmls-logo-1.png",
         "location": "Lisbon, Portugal",
         "certificate": "assets/pdf/lxmls.pdf",
         "tags": ["Machine Learning", "Python", "PyTorch"]
+    },
+    {
+        "eventName": "course",
+        "endDate": "2020-11-13",
+        "startDate": "2020-11-09",
+        "description": "XXII Giambiagi Winter School: Artificial intelligence and deep learning in physics",
+        "enterprise": "Universidad de Buenos Aires (UBA)",
+        "role": "Poster session presenter",
+        "logoUrl": "assets/images/logos/learning_courses/1200px-UBA.png",
+        "location": "Buenos Aires, Argentina",
+        "certificate": "assets/pdf/certificado_barrachina_eng.pdf",
+        "tags": ["Machine Learning", "Python"]
     },
     {
         "eventName": "course",

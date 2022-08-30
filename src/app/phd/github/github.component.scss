@@ -1,0 +1,69 @@
+@import '../../variables.scss';
+
+.git-stats {
+    color: $secondaryText;
+    margin: 10px;
+
+    & > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 10px;
+    }
+
+    & .stars {
+        order: -1;
+        & div > i {
+            color: #eac64f;
+        }
+    }
+}
+
+.git-tag {
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: 0px 0px 1px 1px #e8ebef;
+    border: 1px solid #e8ebef;
+    & > i, p {
+        line-height: 22px;
+    }
+    & > div {
+        background-color: #e8ebef;
+        border-radius: 20px;
+        padding: 2px;
+        min-width: 29px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+.git-title {
+    color: $secondaryText;
+}
+
+.git-badges {
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+}
+
+.git-icons {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &  img {
+        max-height: 100px;
+    }
+    & img:hover {
+        transform: scale(1.2);
+    }
+}

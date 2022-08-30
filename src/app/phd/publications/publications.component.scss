@@ -1,0 +1,42 @@
+.publication-list {
+    color: black;
+    width: 80vw;
+
+    & li {
+        text-align: justify;
+        text-justify: inter-word;
+        margin-bottom: 5px;
+        vertical-align: top;
+    }
+
+    & > li > p {
+        display: inline;
+    }
+}
+
+.publishers-icons {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &  img {
+        max-height: 100px;
+    }
+    & img:hover {
+        transform: scale(1.2);
+    }
+}
+
+.awards {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &  img {
+        max-height: 100px;
+    }
+}
+
+h1 {
+    color: black;
+}

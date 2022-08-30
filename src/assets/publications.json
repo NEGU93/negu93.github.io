@@ -1,0 +1,81 @@
+[
+    {
+        "type": "Journal",
+        "authors": ["José Agustín Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title": "Comparison Between Equivalent Architectures of Complex-valued and Real-valued Neural Networks - Application on Polarimetric SAR Image Segmentation",
+        "year": "2022-07",
+        "journal": "Journal of Signal Processing Systems",
+        "publisher": "Springer",
+        "pages": "1-10"
+    },
+    {
+        "type": "Proceedings",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title": "Complex-valued vs. real-valued neural networks for classification perspectives: An example on non-circular data",
+        "year": "2021-06",
+        "location": "Toronto, Ontario, Canada",
+        "publisher": "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+        "pages": "2990-2994"
+    },
+    {
+        "type": "Proceedings",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Gilles Vieillard", "Christèle Morisseau", "Jean-Philippe Ovarlez"],
+        "title":  "About the Equivalence Between Complex-Valued and Real-Valued Fully Connected Neural Networks - Application to Polinsar Images",
+        "year": "2021-10",
+        "location": "Gold Coast, Queensland, Australia",
+        "publisher": "IEEE 31st International Workshop on Machine Learning for Signal Processing (MLSP)",
+        "pages": "1-6"
+    },
+    {
+        "type": "Proceedings",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Gilles Vieillard", "Christèle Morisseau", "Jean-Philippe Ovarlez"],
+        "title":  "Real- and Complex-Valued Neural Networks for SAR image segmentation through different polarimetric representations",
+        "year": "2022-10",
+        "location": "Bordeaux, France",
+        "publisher": "IEEE International Conference on Image Processing (ICIP)"
+    },
+    {
+        "type": "Proceedings",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title":  "Merits of Complex-Valued Neural Networks for PolSAR image segmentation",
+        "year": "2022-09",
+        "location": "Nancy, France",
+        "publisher": "GRETSI XXVIIIème Colloque Francophone de Traitement du Signal et des Images"
+    },
+    {
+        "type": "Proceedings",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title":  "Complex-Valued Neural Networks for Polarimetric SAR segmentation using Pauli representation",
+        "year": "2022-07",
+        "location": "Kuala Lumpur, Malaysia",
+        "publisher": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)"
+    },
+    {
+        "type": "Pre-print",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title": "Complex-Valued vs. Real-Valued Neural Networks for Classification Perspectives: An Example on Non-Circular Data",
+        "year": "2019-09",
+        "url": "https://arxiv.org/abs/2009.08340",
+        "publisher": "arXiv"
+    },
+    {
+        "type": "Workshop",
+        "presenter": "Jose Agustin Barrachina",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title": "Complex-Valued Neural Networks for Polarimetric SAR segmentation using Pauli representation",
+        "year": "2022-06",
+        "publisher": "SONDRA Workshop",
+        "url": "https://sondra.fr/wp-content/uploads/2022/06/AI.5.pdf",
+        "location": "Avignon, France"
+    },
+    {
+        "type": "Poster Session",
+        "presenter": "Jose Agustin Barrachina",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title": "A comparison between complex and real valued fully connected neural networks on non-circular complex data",
+        "location": "Buenos Aires, Argentina",
+        "url": "assets/pdf/certificado_barrachina_eng.pdf",
+        "publisher": "XXII Giambiagi Winter School: Artificial intelligence and deep learning in physics",
+        "year": "2020-11"
+    }
+]
