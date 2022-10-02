@@ -1,14 +1,16 @@
 // @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
 
 // Main Colors.
-$primaryColor: #669BBC;
-$secondaryColor: #FAFAFF;
-$thirdColor: #231F20;
+$primaryColor: #669bbc;
+$secondaryColor: #fafaff;
+$thirdColor: #231f20;
+$fourthColor: #c5c6c7;
 
 // Font Color.
 $primaryText: white;
 $secondaryText: $thirdColor;
-// $tertiaryText: $thirdColor;
+$tertiaryText: $primaryColor;
+$fourthText: #c5c6c7;
 
 // Background Color.
 $mainBackground: $primaryColor;

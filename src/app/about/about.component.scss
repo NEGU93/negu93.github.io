@@ -1,40 +1,14 @@
-@import '../variables.scss';
-
-h1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-}
-
-#about-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
+@import "../variables.scss";
+@import "../configuration.scss";
 
 .about-me-info {
   max-width: 900px;
   background-color: $mainBackground;
-  box-shadow: 0 0 1.2rem rgba(102, 252, 241, 0.5);
+  // box-shadow: 0 0 1.2rem rgba(102, 252, 241, 0.5);
   padding: 50px;
   position: relative;
-  /*top: -70px;*/
   left: 50%;
   right: 50%;
   transform: translateX(-50%);
   z-index: 1;
-}
-
-.about-me-info p {
-  font-size: min(1.3rem, 4vw);
-  text-align: justify;
-  color: $primaryText;
-}
-
-.about-me-info p:nth-child(2),
-.about-me-info p:last-child {
-  margin-top: 30px;
 }

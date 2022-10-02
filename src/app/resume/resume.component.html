@@ -1,76 +1,100 @@
-<div class="container">
-    <h1>RESUMÉ</h1>
-    <div class="cv-download">
-        <div class="language">
-            <div class="button" id="download-cv">
-                <a href="assets/pdf/cv/french.pdf">
-                    <span>Download French Version</span>
-                    <div id="down-arrow">
-                        <i class="fas fa-cloud-download-alt fa-lg"></i>
-                    </div>
-                </a>
-            </div>
-            <p>Last update: April 2018</p>
-        </div>
-        <div class="language">
-            <div class="button" id="download-cv">
-                <a href="assets/pdf/cv/english.pdf">
-                    <span>Download English Version</span>
-                    <div id="down-arrow">
-                        <i class="fas fa-cloud-download-alt fa-lg"></i>
-                    </div>
-                </a>
-            </div>
-            <p>Last update: January 2022</p>
-        </div>
-        <div class="language">
-            <div class="button" id="download-cv">
-                <a href="assets/pdf/cv/spanish.pdf">
-                    <span>Download Spanish Version</span>
-                    <div id="down-arrow">
-                        <i class="fas fa-cloud-download-alt fa-lg"></i>
-                    </div>
-                </a>
-            </div>
-            <p>Last update: April 2018</p>
-        </div>
+<div class="resume-container">
+  <h1 class="section-title section-title-secondary">RESUMÉ</h1>
+  <div class="cv-download-container flex center-center row-wrap">
+    <div class="button-download-container">
+      <div class="button-box flex center-center">
+        <a href="assets/pdf/cv/french.pdf" target="_blank">
+          <span>Download French Version</span>
+          <div class="down-arrow flex center-center">
+            <i class="fas fa-cloud-download-alt fa-lg"></i>
+          </div>
+        </a>
+      </div>
+      <p class="p-details p-details-fourth">Last update: April 2018</p>
     </div>
-    <div class="resume-buttons">
-        <div class="full-link">
-            <h2>Experience</h2>
-            <button id="experience" [routerLink]="['/timeline', 'experience']">
-                <i class="fas fa-briefcase fa-lg"></i>
-            </button>
-        </div>
-        <div class="full-link">
-            <h2>Education</h2>
-            <button id="education" [routerLink]="['/timeline', 'education']">
-                <i class="fas fa-user-graduate fa-lg"></i>
-            </button>
-        </div>
-        <div class="full-link">
-            <h2>Competitions</h2>
-            <button id="competitions" [routerLink]="['/timeline', 'competition']">
-                <i class="fas fa-trophy fa-lg"></i>
-            </button>
-        </div>
-        <div class="full-link">
-            <h2>Teachings</h2>
-            <button id="teaching" [routerLink]="['/timeline', 'teaching']">
-                <i class="fas fa-chalkboard-teacher fa-lg"></i>
-            </button>
-        </div>
-        <div class="full-link">
-            <h2>Courses</h2>
-            <button id="courses" [routerLink]="['/timeline', 'course']">
-                <i class="fas fa-certificate fa-lg"></i>
-            </button>
-        </div>
-        <div class="full-link">
-            <h2>Publications</h2>
-            <button id="publications" [routerLink]="['/timeline', 'publication']">
-                <i class="fas fa-book fa-lg"></i>
-            </button>
-        </div>
+    <div class="button-download-container">
+      <div class="button-box flex center-center">
+        <a href="assets/pdf/cv/english.pdf" target="_blank">
+          <span>Download English Version</span>
+          <div class="down-arrow flex center-center">
+            <i class="fas fa-cloud-download-alt fa-lg"></i>
+          </div>
+        </a>
+      </div>
+      <p class="p-details p-details-fourth">Last update: January 2022</p>
     </div>
+    <div class="button-download-container">
+      <div class="button-box flex center-center">
+        <a href="assets/pdf/cv/spanish.pdf" target="_blank">
+          <span>Download Spanish Version</span>
+          <div class="down-arrow flex center-center">
+            <i class="fas fa-cloud-download-alt fa-lg"></i>
+          </div>
+        </a>
+      </div>
+      <p class="p-details p-details-fourth">Last update: April 2018</p>
+    </div>
+  </div>
+  <div class="timeline-section-container flex row-wrap space-evenly-center">
+    <div class="full-link">
+      <h2 class="icon-title icon-title-tertiary">Experience</h2>
+      <button
+        class="button-rounded"
+        id="experience"
+        [routerLink]="['/timeline', 'experience']"
+      >
+        <i class="fas fa-briefcase fa-lg"></i>
+      </button>
+    </div>
+    <div class="full-link">
+      <h2 class="icon-title icon-title-tertiary">Education</h2>
+      <button
+        class="button-rounded"
+        id="education"
+        [routerLink]="['/timeline', 'education']"
+      >
+        <i class="fas fa-user-graduate fa-lg"></i>
+      </button>
+    </div>
+    <div class="full-link">
+      <h2 class="icon-title icon-title-tertiary">Competitions</h2>
+      <button
+        class="button-rounded"
+        id="competitions"
+        [routerLink]="['/timeline', 'competition']"
+      >
+        <i class="fas fa-trophy fa-lg"></i>
+      </button>
+    </div>
+    <div class="full-link">
+      <h2 class="icon-title icon-title-tertiary">Teachings</h2>
+      <button
+        class="button-rounded"
+        id="teaching"
+        [routerLink]="['/timeline', 'teaching']"
+      >
+        <i class="fas fa-chalkboard-teacher fa-lg"></i>
+      </button>
+    </div>
+    <div class="full-link">
+      <h2 class="icon-title icon-title-tertiary">Courses</h2>
+      <button
+        class="button-rounded"
+        id="courses"
+        [routerLink]="['/timeline', 'course']"
+      >
+        <i class="fas fa-certificate fa-lg"></i>
+      </button>
+    </div>
+    <div class="full-link">
+      <h2 class="icon-title icon-title-tertiary">Publications</h2>
+      <button
+        class="button-rounded"
+        id="publications"
+        [routerLink]="['/timeline', 'publication']"
+      >
+        <i class="fas fa-book fa-lg"></i>
+      </button>
+    </div>
+  </div>
 </div>
