@@ -8,6 +8,7 @@
       <ul class="nav-list">
         <li><a class='nav-link' [routerLink]="['/home']" (click)="closeNav()">Home</a></li>
         <li><a class='nav-link' [routerLink]="['/timeline']" (click)="closeNav()">Timeline</a></li>
+        <li><a class='nav-link' [routerLink]="['/languages']" (click)="closeNav()">Languages</a></li>
       </ul>
   </nav>
 </header>
@@ -15,7 +16,7 @@
 <div class='container'>
   <router-outlet></router-outlet>
 </div>
-<footer class="copyright flex row-wrap space-between-center">
+<!-- <footer class="copyright flex row-wrap space-between-center">
   <div class="flex column-wrap center">
     <p class="flex row center"><i class="far fa-copyright"></i>: 2020 J. Agustin BARRACHINA</p>
     <p class="flex row center"><i class="fab fa-angular"></i>: Powered by Angular</p>
@@ -23,4 +24,4 @@
   <div class="up" id="up">
     <i class="fas fa-chevron-up" (click)="scrollToTop()"></i><span></span>
   </div>
-</footer>
+</footer> -->

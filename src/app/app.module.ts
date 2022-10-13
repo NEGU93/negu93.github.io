@@ -51,7 +51,7 @@ import { Animations } from './animation';
         { path: 'home', component: HomeComponent },
         { path: 'timeline', component: TimelineComponent },
         { path: 'timeline/:id', component: TimelineComponent },
-        { path: 'computer', component: ComputerComponent },
+        { path: 'languages', component: LanguagesComponent },
         { path: '**', redirectTo: 'home', pathMatch: 'full' },
       ],
       { scrollPositionRestoration: 'enabled' }
