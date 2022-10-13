@@ -3,7 +3,7 @@ import { IEvent } from './events';
 import { EventService } from './event.service';
 import { ActivatedRoute } from '@angular/router';
 import { Animations } from '../animation';
-import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
+// import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Component({
   selector: 'app-timeline',
