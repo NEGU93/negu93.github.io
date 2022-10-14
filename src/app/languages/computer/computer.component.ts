@@ -38,9 +38,9 @@ export class ComputerComponent implements OnInit {
 
   loadAnimations() {
     if (!this.mobile) {
-      // this.loadAPI = new Promise((resolve) => {
-      //   this.loadScript();
-      // });
+      this.loadAPI = new Promise((resolve) => {
+        this.loadScript();
+      });
     } else {
       this.animateMobileSkillBar();
     }
@@ -71,15 +71,15 @@ export class ComputerComponent implements OnInit {
     });
   }
 
-  // loadScript(): void {
-  //   //console.log("load script");
-  //   let node = document.createElement('script');
-  //   node.src = this.url;
-  //   node.type = 'text/javascript';
-  //   node.async = true;
-  //   node.charset = 'utf-8';
-  //   document.getElementsByTagName('head')[0].appendChild(node);
-  // }
+  loadScript(): void {
+    //console.log("load script");
+    let node = document.createElement('script');
+    node.src = this.url;
+    node.type = 'text/javascript';
+    node.async = true;
+    node.charset = 'utf-8';
+    document.getElementsByTagName('head')[0].appendChild(node);
+  }
 
   skillBarAnimate(skill: string): void {
     let percent: string = $('div.skill-skill-' + skill).attr('data-pr');
