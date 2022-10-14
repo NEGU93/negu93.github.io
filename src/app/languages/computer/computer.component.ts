@@ -32,9 +32,9 @@ export class ComputerComponent implements OnInit {
     });
   }
 
-  // ngAfterViewInit() {
-  //   this.loadAnimations();
-  // }
+  ngAfterViewInit() {
+    this.loadAnimations();
+  }
 
   loadAnimations() {
     if (!this.mobile) {
