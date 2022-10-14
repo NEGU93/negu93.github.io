@@ -3,17 +3,18 @@ https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-p
 Check eveything is working correctly (ng serve --open) then checkout into gh-pages
 
 1. git merge master  (To add all new changes to that branch)
-2. ng build --prod --base-href "https://negu93.github.io/"
+2. ng build --configuration production --base-href "https://negu93.github.io/"
 3. ngh
 
 New reposotory:
 
+0. Install NodeJS https://nodejs.org/en/download/
 1. Clone repository
 2. Install angular with `npm install`
 
 
 For gh-pages:
-3. Create the new branch gh-pages (yes, create it)
+3. Create the new branch gh-pages (yes, create it): `git checkout -b gh-pages`
 4. Push the new branch with `git push origin gh-pages --force`
 5. npm install -g angular-cli-ghpages
 

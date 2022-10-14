@@ -1,4 +1,6 @@
 @import "../variables.scss";
+@import "../general-components.scss";
+@import "../configuration.scss";
 
 // Profile image
 .profile-image {
@@ -28,7 +30,7 @@
 }
 
 /*Letters Span*/
-.intro span {
+.intro .home-title span {
   display: inline-block;
 
   &:hover, &.name:hover  {
@@ -186,4 +188,39 @@
   50% {
     transform: translateY(-10px);
   }
+}
+
+
+// Download buttons
+.intro .cv-download-container {
+  flex-direction: row;
+}
+
+.intro .cv-download-container .button-box {
+  color: $secondaryColor;
+  border: 2px solid $secondaryColor;
+
+  & span {
+    color: $secondaryColor;
+  }
+}
+
+.intro .button-download-container {
+  margin: 2% 2.5% 3%;
+}
+
+.intro .down-arrow {
+  position: absolute;
+  bottom: 0;
+  left: -200px;
+  width: 100%;
+  height: 100%;
+  background: $secondaryColor;
+  color: $primaryColor;
+  transition: all 0.35s ease-Out;
+}
+
+.intro .full-link {
+  width: min(200px, 40vw);
+  margin: 5vw 5vw 5vw 0;
 }
