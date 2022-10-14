@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
-import { analyzeAndValidateNgModules } from '@angular/compiler';
+// import { analyzeAndValidateNgModules } from '@angular/compiler';
 
 @Component({
   selector: 'app-github',

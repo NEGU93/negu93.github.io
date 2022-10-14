@@ -57,12 +57,8 @@ import { PublicationsComponent } from './phd/publications/publications.component
         { path: 'home', component: HomeComponent },
         { path: 'timeline', component: TimelineComponent },
         { path: 'timeline/:id', component: TimelineComponent },
-<<<<<<< HEAD
-        { path: 'computer', component: ComputerComponent },
         { path: 'phd', component: PhdComponent},
-=======
         { path: 'languages', component: LanguagesComponent },
->>>>>>> master
         { path: '**', redirectTo: 'home', pathMatch: 'full' },
       ],
       { scrollPositionRestoration: 'enabled' }
