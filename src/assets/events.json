@@ -18,7 +18,7 @@
         "enterprise": "IEEE IGARSS 2022",    	
         "description": "J Agustin BARRACHINA et al. 'Complex-Valued Neural Networks for Polarimetric SAR segmentation using Pauli representation'",
         "logoUrl": "assets/images/logos/publish/IG22_WebHeader.png",
-        "certificate": "https://www.igarss2022.org/certificate_attendance.php?a=08342F235E9B47D5ACC735F8888E52DB33",
+        "certificate": "https://ieeexplore.ieee.org/document/9883251",
         "location": "Kuala Lumpur, Malaysia",
         "tags": ["Machine Learning"]
     },
