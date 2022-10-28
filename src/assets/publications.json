@@ -4,6 +4,7 @@
         "authors": ["José Agustín Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
         "title": "Comparison Between Equivalent Architectures of Complex-valued and Real-valued Neural Networks - Application on Polarimetric SAR Image Segmentation",
         "year": "2022-07",
+        "url": "https://link.springer.com/article/10.1007/s11265-022-01793-0",
         "journal": "Journal of Signal Processing Systems",
         "publisher": "Springer",
         "pages": "1-10",
@@ -22,6 +23,7 @@
         "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
         "title": "Complex-valued vs. real-valued neural networks for classification perspectives: An example on non-circular data",
         "year": "2021-06",
+        "url": "https://ieeexplore.ieee.org/document/9413814",
         "location": "Toronto, Ontario, Canada",
         "publisher": "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
         "pages": "2990-2994",
@@ -60,6 +62,7 @@
         "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
         "title":  "Complex-Valued Neural Networks for Polarimetric SAR segmentation using Pauli representation",
         "year": "2022-07",
+        "url": "https://ieeexplore.ieee.org/document/9883251",
         "location": "Kuala Lumpur, Malaysia",
         "publisher": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
         "url": "https://ieeexplore.ieee.org/abstract/document/9883251/"
