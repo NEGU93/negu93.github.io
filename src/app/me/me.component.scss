@@ -193,7 +193,8 @@
 
 // Download buttons
 .intro .cv-download-container {
-  flex-direction: row;
+  width: 50vw;
+  justify-content: left;
 }
 
 .intro .cv-download-container .button-box {

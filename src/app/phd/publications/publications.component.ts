@@ -11,6 +11,7 @@ export class PublicationsComponent implements OnInit {
   errorMessage = '';
   publications: IPublication[];
   hoverPublisher: string = null;
+  awardVisible: number = 0;
 
   constructor(private publicationService: PublicationService) { }
 
@@ -38,4 +39,7 @@ export class PublicationsComponent implements OnInit {
     this.hoverPublisher = null;
   }
 
+  setAward(value: number) {
+    this.awardVisible = this.awardVisible == value ? 0 : value;
+  }
 }

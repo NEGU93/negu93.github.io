@@ -1,33 +1,46 @@
-<div class="awards">
+<div class="awards flex column">
     <h1>Awards</h1>
-    <div class="wayr-award">
-        <img src="assets/images/logos/logo-reddit.png" alt="Reddit-WAYR">
-        <p>Selected as most upvoted paper on WAYR (What Are You Reading) r/MachineLearning sub-reddit of week 116</p>
-        <iframe id="reddit-embed" src="https://www.redditmedia.com/r/MachineLearning/comments/odrudt/d_machine_learning_wayr_what_are_you_reading_week/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="915" width="640" scrolling="no"></iframe>
+    <div class="awards-icons-container flex row center">
+        <div class="wayr-award hover-icon" (click)="setAward(1)">
+            <img src="assets/images/logos/logo-reddit.png" alt="Reddit-WAYR">
+        </div>
+        <div class="grss-award hover-icon" (click)="setAward(2)"> 
+            <img src="assets/images/logos/publish/grss.png" alt="GRSS">
+        </div>
+        <div class="mlsp-rank hover-icon" (click)="setAward(3)">
+            <img src="assets/images/logos/publish/ieee-sp.png" alt="MLSP">
+        </div>
     </div>
-    <div class="grss-award"> 
-        <img src="assets/images/logos/publish/grss.png" alt="GRSS">
-        <p>3MT Prize Award Finalist https://www.igarss2022.org/3MT.php</p>
-        <p>3-Minute-Thesis (3MT), founded by the University of Queensland, is an academic competition that cultivates students presentation and research communication skills and challenges them to describe their research within three minutes to a non-specialist audience with one static slide.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zws7TBNHn9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-    </div>
-    <div>
-        <img src="assets/images/logos/publish/ieee-sp.png" alt="MLSP">
-        <p>Ranked as top 15% on reviewer score at MLSP 2021 (see published works)</p>
-        <p>Invited to publish a paper on the Journal of Signal Processing Systems (JSPS) Special Issue on Machine Learning for Signal Processing (SI-MLSP2021)</p>
-        <div class="email">
-            <p>
-                From: Microsoft CMT
-                Date: 23 novembre 2021 à 12:38:01 UTC+1
-                To: Jean-Philippe Ovarlez
-                Subject: Indication of Interest Letter from JSPS, Special Issue on MLSP 2021
-            </p>
-            <p>
-                Thank you for submitting the paper "About the equivalence between complex-valued and real-valued fully connected neural networks - application to PolInSAR images" to MLSP 2021, and congratulations on its acceptance. We are pleased to inform you of another great opportunity: Journal of Signal Processing System (IF=1.348), Special Issue on MLSP 2021. 
-    
-                As the reviewer score of your paper ranks top 15% among all submissions, we would like to recommend it to this special issue, provided that you are interested in this opportunity to make a broader impact. To this end, we ask that you extend your work considerably. 
-    
-            </p>
+    <div class="awards-info-container flex center-center">
+        <div class="wayr-award flex column center-center" *ngIf="awardVisible==1">
+            <p class="p-details p-details-primary">Selected as most upvoted paper on WAYR (What Are You Reading) r/MachineLearning sub-reddit of week 116</p>
+            <iframe id="reddit-embed" src="https://www.redditmedia.com/r/MachineLearning/comments/odrudt/d_machine_learning_wayr_what_are_you_reading_week/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="915" width="640" scrolling="no"></iframe>
+        </div>
+        <div class="grss-award flex row center" *ngIf="awardVisible==2">
+            <div class="flex column">
+                <p>3MT Prize Award Finalist https://www.igarss2022.org/3MT.php</p>
+                <p>3-Minute-Thesis (3MT), founded by the University of Queensland, is an academic competition that cultivates students presentation and research communication skills and challenges them to describe their research within three minutes to a non-specialist audience with one static slide.</p>
+            </div>            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Zws7TBNHn9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+        </div>
+        <div class="mlsp-rank" *ngIf="awardVisible==3">
+            <p>Ranked as top 15% on reviewer score at MLSP 2021 (see published works)</p>
+            <p>Invited to publish a paper on the Journal of Signal Processing Systems (JSPS) Special Issue on Machine Learning for Signal Processing (SI-MLSP2021)</p>
+            <div class="email">
+                <p>
+                    From: Microsoft CMT
+                    <br>Date: 23 novembre 2021 à 12:38:01 UTC+1
+                    <br>To: Jean-Philippe Ovarlez
+                    <br>Subject: Indication of Interest Letter from JSPS, Special Issue on MLSP 2021
+                    <br>
+                </p>
+                <p>
+                    Thank you for submitting the paper "About the equivalence between complex-valued and real-valued fully connected neural networks - application to PolInSAR images" to MLSP 2021, and congratulations on its acceptance. We are pleased to inform you of another great opportunity: Journal of Signal Processing System (IF=1.348), Special Issue on MLSP 2021. 
+        
+                    As the reviewer score of your paper ranks top 15% among all submissions, we would like to recommend it to this special issue, provided that you are interested in this opportunity to make a broader impact. To this end, we ask that you extend your work considerably. 
+        
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -43,10 +56,13 @@
             <p *ngIf="publication.location as location"> {{location}},</p>
             <p *ngIf="publication.pages as pages"> pp. {{pages}},</p>
             <p> {{publication.year.getFullYear()}}.</p>
+            <p *ngIf="publication.url as url">
+                <a href="{{publication.url}}"> Link.</a>
+            </p>
         </li>
     </ul>
 </div>
-<div class="publishers-icons">
+<div class="publishers-icons flex row center">
     <img src="assets/images/logos/publish/springer.png" alt="Springer" (mouseenter)="mouseEnter('Springer') "  (mouseleave)="mouseLeave()">
     <img src="assets/images/logos/enterprises/ieee.png" alt="IEEE" (mouseenter)="mouseEnter('IEEE') "  (mouseleave)="mouseLeave()">
     <img src="assets/images/logos/publish/logo-light-300x258.png" (mouseenter)="mouseEnter('Gretsi') "  (mouseleave)="mouseLeave()" alt="Gretsi">

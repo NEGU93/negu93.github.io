@@ -6,7 +6,16 @@
         "year": "2022-07",
         "journal": "Journal of Signal Processing Systems",
         "publisher": "Springer",
-        "pages": "1-10"
+        "pages": "1-10",
+        "url": "https://link.springer.com/article/10.1007/s11265-022-01793-0"
+    },
+    {
+        "type": "Journal",
+        "authors": ["(Submitted)", "José Agustín Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title": "Impact of PolSAR pre-processing and balancing methods on complex-valued neural networks segmentation tasks",
+        "year": "2023",
+        "journal": "Open Journal of Signal Processing",
+        "publisher": "IEEE"
     },
     {
         "type": "Proceedings",
@@ -15,7 +24,8 @@
         "year": "2021-06",
         "location": "Toronto, Ontario, Canada",
         "publisher": "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
-        "pages": "2990-2994"
+        "pages": "2990-2994",
+        "url": "https://ieeexplore.ieee.org/abstract/document/9413814"
     },
     {
         "type": "Proceedings",
@@ -24,7 +34,8 @@
         "year": "2021-10",
         "location": "Gold Coast, Queensland, Australia",
         "publisher": "IEEE 31st International Workshop on Machine Learning for Signal Processing (MLSP)",
-        "pages": "1-6"
+        "pages": "1-6",
+        "url": "https://ieeexplore.ieee.org/abstract/document/9596542"
     },
     {
         "type": "Proceedings",
@@ -32,7 +43,8 @@
         "title":  "Real- and Complex-Valued Neural Networks for SAR image segmentation through different polarimetric representations",
         "year": "2022-10",
         "location": "Bordeaux, France",
-        "publisher": "IEEE International Conference on Image Processing (ICIP)"
+        "publisher": "IEEE International Conference on Image Processing (ICIP)",
+        "url": "https://ieeexplore.ieee.org/abstract/document/9897186"
     },
     {
         "type": "Proceedings",
@@ -40,7 +52,8 @@
         "title":  "Merits of Complex-Valued Neural Networks for PolSAR image segmentation",
         "year": "2022-09",
         "location": "Nancy, France",
-        "publisher": "GRETSI XXVIIIème Colloque Francophone de Traitement du Signal et des Images"
+        "publisher": "GRETSI XXVIIIème Colloque Francophone de Traitement du Signal et des Images",
+        "url": "http://gretsi.fr/archives/colloque/2022"
     },
     {
         "type": "Proceedings",
@@ -48,7 +61,8 @@
         "title":  "Complex-Valued Neural Networks for Polarimetric SAR segmentation using Pauli representation",
         "year": "2022-07",
         "location": "Kuala Lumpur, Malaysia",
-        "publisher": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)"
+        "publisher": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+        "url": "https://ieeexplore.ieee.org/abstract/document/9883251/"
     },
     {
         "type": "Pre-print",
@@ -64,7 +78,7 @@
         "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
         "title": "Complex-Valued Neural Networks for Polarimetric SAR segmentation using Pauli representation",
         "year": "2022-06",
-        "publisher": "SONDRA Workshop",
+        "publisher": "5th SONDRA Workshop",
         "url": "https://sondra.fr/wp-content/uploads/2022/06/AI.5.pdf",
         "location": "Avignon, France"
     },

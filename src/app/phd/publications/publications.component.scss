@@ -1,3 +1,6 @@
+@import "../../configuration.scss";
+@import "../../variables.scss";
+
 .publication-list {
     color: black;
     width: 80vw;
@@ -16,27 +19,47 @@
 
 .publishers-icons {
     padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     &  img {
         max-height: 100px;
-    }
-    & img:hover {
-        transform: scale(1.2);
     }
 }
 
 .awards {
     padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     &  img {
         max-height: 100px;
     }
 }
 
+.awards-icons-container {
+    column-gap: 40px;
+    margin-bottom: 20px;
+}
+
 h1 {
     color: black;
+}
+
+.awards-info-container {
+    background: $primaryColor;
+    border-radius: 10px;
+    width: 80vw;
+
+    &:first-child {
+        width: 100%;
+    }
+
+    & .wayr-award {
+        row-gap: 15px;
+    }
+    
+    & .grss-award :first-child {
+        max-width: 500px;
+    }
+
+    & div {
+        padding: 20px;
+        margin: 20px; 
+    }
+    
 }
