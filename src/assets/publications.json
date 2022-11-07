@@ -91,5 +91,13 @@
         "url": "assets/pdf/certificado_barrachina_eng.pdf",
         "publisher": "XXII Giambiagi Winter School: Artificial intelligence and deep learning in physics",
         "year": "2020-11"
+    },
+    {
+        "type": "Pre-print",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title": "Impact of PolSAR pre-processing and balancing methods on complex-valued neural networks segmentation tasks",
+        "year": "2022-10",
+        "url": "https://arxiv.org/abs/2210.17419",
+        "publisher": "arXiv"
     }
 ]
