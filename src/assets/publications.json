@@ -62,7 +62,7 @@
         "year": "2022-07",
         "url": "https://ieeexplore.ieee.org/document/9883251",
         "location": "Kuala Lumpur, Malaysia",
-        "publisher": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+        "publisher": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)"
     },
     {
         "type": "Pre-print",
@@ -91,5 +91,14 @@
         "url": "assets/pdf/certificado_barrachina_eng.pdf",
         "publisher": "XXII Giambiagi Winter School: Artificial intelligence and deep learning in physics",
         "year": "2020-11"
+    },
+    {
+        "type": "Code",
+        "authors": ["Jose Agustin Barrachina"],
+        "title": "Complex-Valued Neural Networks (CVNN)",
+        "url": "https://doi.org/10.5281/zenodo.4452131",
+        "location": "DOI: https://doi.org/10.5281/zenodo.4452131",
+        "publisher": "Zenodo",
+        "year": "2021"
     }
 ]

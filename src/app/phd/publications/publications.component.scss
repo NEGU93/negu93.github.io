@@ -2,14 +2,23 @@
 @import "../../variables.scss";
 
 .publication-list {
-    color: black;
-    width: 80vw;
+    color: white;
+    // width: 80vw;
 
     & li {
         text-align: justify;
         text-justify: inter-word;
         margin-bottom: 5px;
         vertical-align: top;
+    }
+
+    & li::before {
+        display: block;
+        content: attr(title);
+        font-weight: bold;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
     }
 
     & > li > p {
@@ -38,6 +47,13 @@
 
 h1 {
     color: black;
+}
+
+.publications-container {
+    background: $primaryColor;
+    border-radius: 10px;
+    width: 80vw;
+    padding: 30px 50px;
 }
 
 .awards-info-container {

@@ -18,7 +18,7 @@
         </div>
         <div class="grss-award flex row center" *ngIf="awardVisible==2">
             <div class="flex column">
-                <p>3MT Prize Award Finalist https://www.igarss2022.org/3MT.php</p>
+                <p><a href="https://www.igarss2022.org/3MT.php">3MT Prize Award Finalist</a></p>
                 <p>3-Minute-Thesis (3MT), founded by the University of Queensland, is an academic competition that cultivates students presentation and research communication skills and challenges them to describe their research within three minutes to a non-specialist audience with one static slide.</p>
             </div>            
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Zws7TBNHn9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
@@ -47,41 +47,48 @@
 
 <div>
     <h1>Publications</h1>
-    <ul *ngFor='let publication of publications' class="publication-list">
-        <li *ngIf="publication.type == 'Journal' || publication.type == 'Proceedings'" [ngStyle]="{'font-weight': publication.publisher.toLowerCase().includes(hoverPublisher) ? 'bold' : 'normal'}">
-            <p *ngFor="let author of publication.authors">{{author}}, </p>
-            <p>"{{publication.title}}" </p>
-            <p *ngIf="publication.journal as journal"><em> in {{journal}},</em></p>
-            <p><em> {{publication.publisher}},</em></p>
-            <p *ngIf="publication.location as location"> {{location}},</p>
-            <p *ngIf="publication.pages as pages"> pp. {{pages}},</p>
-            <p> {{publication.year.getFullYear()}}.</p>
-            <p *ngIf="publication.url as url">
-                <a href="{{publication.url}}"> Link.</a>
-            </p>
-        </li>
-    </ul>
-</div>
-<div class="publishers-icons flex row center">
-    <img src="assets/images/logos/publish/springer.png" alt="Springer" (mouseenter)="mouseEnter('Springer') "  (mouseleave)="mouseLeave()">
-    <img src="assets/images/logos/enterprises/ieee.png" alt="IEEE" (mouseenter)="mouseEnter('IEEE') "  (mouseleave)="mouseLeave()">
-    <img src="assets/images/logos/publish/logo-light-300x258.png" (mouseenter)="mouseEnter('Gretsi') "  (mouseleave)="mouseLeave()" alt="Gretsi">
+    <div class="publishers-icons flex row center">
+        <img src="assets/images/logos/publish/springer.png" alt="Springer" (mouseenter)="mouseEnter('Springer') "  (mouseleave)="mouseLeave()">
+        <img src="assets/images/logos/enterprises/ieee.png" alt="IEEE" (mouseenter)="mouseEnter('IEEE') "  (mouseleave)="mouseLeave()">
+        <img src="assets/images/logos/publish/logo-light-300x258.png" (mouseenter)="mouseEnter('Gretsi') "  (mouseleave)="mouseLeave()" alt="Gretsi">
+    </div>
+    <div class="publications-container">
+        <ul *ngFor='let publication of publications' class="publication-list">
+            <li title="foo" *ngIf="publication.type == 'Journal' || publication.type == 'Proceedings'" [ngStyle]="{'font-weight': publication.publisher.toLowerCase().includes(hoverPublisher) ? 'bold' : 'normal'}">
+                <p *ngFor="let author of publication.authors">{{author}}, </p>
+                <p>"{{publication.title}}" </p>
+                <p *ngIf="publication.journal as journal"><em> in {{journal}},</em></p>
+                <p><em> {{publication.publisher}},</em></p>
+                <p *ngIf="publication.location as location"> {{location}},</p>
+                <p *ngIf="publication.pages as pages"> pp. {{pages}},</p>
+                <p> {{publication.year.getFullYear()}}.</p>
+                <p *ngIf="publication.url as url">
+                    <a href="{{publication.url}}"> Link.</a>
+                </p>
+            </li>
+        </ul>
+    </div>    
 </div>
 
 <div>
     <h1>Miscellaneous</h1>
-    <ul *ngFor='let publication of publications' class="publication-list">
-        <li *ngIf="publication.type != 'Journal' && publication.type != 'Proceedings'" [ngStyle]="{'font-weight': publication.publisher.toLowerCase().includes(hoverPublisher) ? 'bold' : 'normal'}">
-            <p style="font-weight: bold;">{{publication.type}}: </p>
-            <p *ngFor="let author of publication.authors">{{author}}, </p>
-            <p>"{{publication.title}}" </p>
-            <p *ngIf="publication.journal as journal"><em> in {{journal}},</em></p>
-            <p><em> {{publication.publisher}},</em></p>
-            <p *ngIf="publication.location as location"> {{location}},</p>
-            <p *ngIf="publication.pages as pages"> pp. {{pages}},</p>
-            <p> {{publication.year.getFullYear()}}.</p>
-        </li>
-    </ul>
+    <div class="publications-container">
+        <ul *ngFor='let publication of publications' class="publication-list">
+            <li *ngIf="publication.type != 'Journal' && publication.type != 'Proceedings'" [ngStyle]="{'font-weight': publication.publisher.toLowerCase().includes(hoverPublisher) ? 'bold' : 'normal'}">
+                <p style="font-weight: bold;">{{publication.type}}: </p>
+                <p *ngFor="let author of publication.authors">{{author}}, </p>
+                <p>"{{publication.title}}" </p>
+                <p *ngIf="publication.journal as journal"><em> in {{journal}},</em></p>
+                <p><em> {{publication.publisher}},</em></p>
+                <p *ngIf="publication.location as location"> {{location}},</p>
+                <p *ngIf="publication.pages as pages"> pp. {{pages}},</p>
+                <p> {{publication.year.getFullYear()}}.</p>
+                <p *ngIf="publication.url as url">
+                    <a href="{{publication.url}}"> Link.</a>
+                </p>
+            </li>
+        </ul>
+    </div>
 </div>
 <!--
     1. Journal JSPS
