@@ -100,5 +100,13 @@
         "location": "DOI: https://doi.org/10.5281/zenodo.4452131",
         "publisher": "Zenodo",
         "year": "2021"
+    },
+    {
+        "type": "Pre-print",
+        "authors": ["Jose Agustin Barrachina", "Chengfang Ren", "Christèle Morisseau", "Gilles Vieillard", "Jean-Philippe Ovarlez"],
+        "title": "Impact of PolSAR pre-processing and balancing methods on complex-valued neural networks segmentation tasks",
+        "year": "2022-10",
+        "url": "https://arxiv.org/abs/2210.17419",
+        "publisher": "arXiv"
     }
 ]
