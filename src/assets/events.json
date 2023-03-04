@@ -12,6 +12,16 @@
     },
     {
         "eventName": "publication",
+        "endDate": "2023-06",
+        "role": "Conference Publication",
+        "enterprise": "IEEE ICASSP 2023",    	
+        "description": "J Agustin BARRACHINA et al. 'Impact of PolSAR pre-processing and balancing methods on complex-valued neural networks segmentation tasks'",
+        "logoUrl": "assets/images/logos/publish/ieee-sp.png",
+        "location": "Rhodes, Greece",
+        "tags": ["Machine Learning"]
+    },
+    {
+        "eventName": "publication",
         "endDate": "2022-07-22",
         "startDate": "2022-07-17",
         "role": "Conference Publication",
@@ -53,6 +63,17 @@
         "logoUrl": "assets/images/logos/publish/springer.png",
         "certificate": "https://link.springer.com/article/10.1007/s11265-022-01793-0",
         "location": "Springer US",
+        "tags": ["Machine Learning"]
+    },
+    {
+        "eventName": "publication",
+        "endDate": "2023-02",
+        "role": "Journal Publication",
+        "enterprise": "Open Journal of Signal Processing (OJSP)",    	
+        "description": "J Agustin BARRACHINA et al. 'Impact of PolSAR pre-processing and balancing methods on complex-valued neural networks segmentation tasks'",
+        "logoUrl": "assets/images/logos/enterprises/ieee.png",
+        "location": "IEEE",
+        "certificate": "https://ieeexplore.ieee.org/abstract/document/10048504",
         "tags": ["Machine Learning"]
     },
     {
@@ -99,7 +120,7 @@
     {
         "eventName": "experience",
         "startDate": "2019-10",
-        "endDate": "Present",
+        "endDate": "2022-11",
         "description": "PhD student. Scholarship 50%-50% ONERA and DGA (Direction Générale de l'Armement). Based in ONERA / SONDRA - CentraleSupelec.",
         "department": "MATS / SONDRA",
         "enterprise": "ONERA / CentraleSupelec / DGA",
@@ -107,6 +128,18 @@
         "logoUrl": "assets/images/logos/enterprises/onera-full.png",
         "location": "Palaiseau, France",
         "tags": ["Machine Learning", "Python"]
+    },
+    {
+        "eventName": "experience",
+        "startDate": "2023-02",
+        "endDate": "Present",
+        "description": "Machine Learning Engineer in Signal Processing applications",
+        "department": "Space & Communication (S&C)",
+        "enterprise": "SAFRAN Data Systems",
+        "role": "Machine Learning / Signal Processing Engineer R&D",
+        "logoUrl": "assets/images/logos/enterprises/Safran.png",
+        "location": "Les Ulis, France",
+        "tags": ["Machine Learning", "Python", "Signal Processing"]
     },
     {
         "eventName": "experience",
