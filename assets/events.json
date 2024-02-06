@@ -363,7 +363,6 @@
         "enterprise": "J.P. Morgan Chase & Co.",
         "role": "Hackathon J.P. Morgan",
         "logoUrl": "assets/images/logos/enterprises/JP-Morgan-Logo.png",
-        "certificate": "https://www.linkedin.com/posts/jose-agustin-barrachina_datasquare-activity-7130189213009895425-4eOB?utm_source=share&utm_medium=member_desktop",
         "location": "Buenos Aires, Argentina"
     },
     {
@@ -373,6 +372,7 @@
         "enterprise": "Safran",
         "role": "Data Challenge",
         "logoUrl": "assets/images/logos/enterprises/Safran.png",
+        "certificate": "https://www.linkedin.com/posts/jose-agustin-barrachina_datasquare-activity-7130189213009895425-4eOB?utm_source=share&utm_medium=member_desktop",
         "location": "Paris, France"
     },
     {
