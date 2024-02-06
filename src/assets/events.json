@@ -367,6 +367,15 @@
     },
     {
         "eventName": "competition",
+        "endDate": "2023-12-01",
+        "description": "First position over 20 participants",
+        "enterprise": "Safran",
+        "role": "Data Challenge",
+        "logoUrl": "assets/images/logos/enterprises/Safran.png",
+        "location": "Paris, France"
+    },
+    {
+        "eventName": "competition",
         "endDate": "2022-07-19",
         "description": "IEEE GRSS Excellence in Technical Communication Student Prize Award",
         "enterprise": "University of Queensland",
