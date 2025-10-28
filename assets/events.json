@@ -377,6 +377,26 @@
     },
     {
         "eventName": "competition",
+        "endDate": "2025-10-15",
+        "description": "Service Award (1st Company-wise) & People's Choice Award (1st over 21 participants)",
+        "enterprise": "Safran",
+        "role": "Safran Innovation Award 2025",
+        "logoUrl": "assets/images/logos/enterprises/Safran.png",
+        "certificate": "https://www.safran-group.com/fr/actualite/safran-celebre-20-ans-innovations-au-safran-innovation-day-2025-2025-10-15",
+        "location": "Paris, France"
+    },
+    {
+        "eventName": "competition",
+        "endDate": "2025-10-15",
+        "description": "First position over 25 participants",
+        "enterprise": "Safran",
+        "role": "Data WEC (World Endurance Championship) 2025",
+        "logoUrl": "assets/images/logos/enterprises/Safran.png",
+        "certificate": "TBD soon",
+        "location": "Paris, France"
+    },
+    {
+        "eventName": "competition",
         "endDate": "2022-07-19",
         "description": "IEEE GRSS Excellence in Technical Communication Student Prize Award",
         "enterprise": "University of Queensland",
