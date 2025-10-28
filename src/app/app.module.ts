@@ -25,6 +25,7 @@ import { Animations } from './animation';
 import { PhdComponent } from './phd/phd.component';
 import { GithubComponent } from './phd/github/github.component';
 import { PublicationsComponent } from './phd/publications/publications.component';
+import { ChatLlmComponent } from './chat-llm/chat-llm.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { PublicationsComponent } from './phd/publications/publications.component
     AppearDirective,
     PhdComponent,
     GithubComponent,
-    PublicationsComponent
+    PublicationsComponent,
+    ChatLlmComponent
   ],
   imports: [
     BrowserModule,
@@ -59,6 +61,7 @@ import { PublicationsComponent } from './phd/publications/publications.component
         { path: 'timeline/:id', component: TimelineComponent },
         { path: 'phd', component: PhdComponent},
         { path: 'languages', component: LanguagesComponent },
+        { path: 'chat_llm', component: ChatLlmComponent },
         { path: '**', redirectTo: 'home', pathMatch: 'full' },
       ],
       { scrollPositionRestoration: 'enabled' }
